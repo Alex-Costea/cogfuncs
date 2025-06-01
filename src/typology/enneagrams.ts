@@ -20,6 +20,13 @@ type id = { name: "id" }
 type ego = { name: "ego" }
 type superego = { name: "superego" }
 
+// Reaction style
+
+type reactive = {name: "reactive"}
+type avoidant = {name : "avoidant"}
+type metabolizing = {name : "metabolizing"}
+
+
 //type 1
 
 export type type1 = {
@@ -27,6 +34,7 @@ export type type1 = {
     archetype: "reformer",
     center: gut
     agent: superego
+    reaction: metabolizing
 }
 
 export type type1w9 = {
@@ -46,6 +54,7 @@ export type type2 = {
     archetype: "helper"
     center: heart
     agent: superego
+    reaction: avoidant
 }
 
 export type type2w1 = {
@@ -65,6 +74,7 @@ export type type3 = {
     archetype: "performer"
     center: heart
     agent: ego
+    reaction: metabolizing
 }
 
 export type type3w2 = {
@@ -84,6 +94,7 @@ export type type4 = {
     archetype: "romantic"
     center: heart
     agent: id
+    reaction: reactive
 }
 
 export type type4w3 = {
@@ -101,6 +112,7 @@ export type type5 = {
     archetype: "observer"
     center: head
     agent: superego
+    reaction: metabolizing
 }
 
 export type type5w4 = {
@@ -120,6 +132,7 @@ export type type6 = {
     archetype: "loyalist"
     center : head
     agent: ego
+    reaction: reactive
 }
 
 export type type6w5 = {
@@ -139,6 +152,7 @@ export type type7 = {
     archetype: "enthusiast"
     center: head
     agent: id
+    reaction: avoidant
 }
 
 export type type7w6 = {
@@ -158,6 +172,7 @@ export type type8 = {
     archetype: "challenger"
     center: gut
     agent: id
+    reaction: reactive
 }
 
 export type type8w7 = {
@@ -177,6 +192,7 @@ export type type9 = {
     archetype: "peacemaker"
     center: gut
     agent: ego
+    reaction: avoidant
 }
 
 export type type9w8 = {
