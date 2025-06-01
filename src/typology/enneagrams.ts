@@ -40,11 +40,13 @@ export type type1 = {
 export type type1w9 = {
     core: type1
     wing: type9
+    archetype: "idealist"
 }
 
 export type type1w2 = {
     core: type1
     wing: type2
+    archetype: "advocate"
 }
 
 // type 2
@@ -60,11 +62,13 @@ export type type2 = {
 export type type2w1 = {
     core: type2
     wing: type1
+    archetype: "caretaker"
 }
 
 export type type2w3 = {
     core: type2
     wing: type3
+    archetype: "host"
 }
 
 //type 3
@@ -80,11 +84,13 @@ export type type3 = {
 export type type3w2 = {
     core: type3
     wing: type2
+    archetype: "motivator"
 }
 
 export type type3w4 = {
     core: type3
     wing: type4
+    archetype: "professional"
 }
 
 // type 4
@@ -100,11 +106,13 @@ export type type4 = {
 export type type4w3 = {
     core: type4
     wing: type3
+    archetype: "auteur"
 }
 
 export type type4w5 = {
     core: type4
     wing: type5
+    archetype: "mystic"
 }
 
 export type type5 = {
@@ -118,11 +126,13 @@ export type type5 = {
 export type type5w4 = {
     core: type5
     wing: type4
+    archetype: "philosopher"
 }
 
 export type type5w6 = {
     core: type5
     wing: type6
+    archetype: "strategist"
 }
 
 // type 6
@@ -138,11 +148,13 @@ export type type6 = {
 export type type6w5 = {
     core: type6
     wing: type5
+    archetype: "skeptic"
 }
 
 export type type6w7 = {
     core: type6
     wing: type7
+    archetype: "buddy"
 }
 
 // type 7
@@ -158,11 +170,13 @@ export type type7 = {
 export type type7w6 = {
     core: type7
     wing: type6
+    archetype: "entertainer"
 }
 
 export type type7w8 = {
     core: type7
     wing: type8
+    archetype: "trailblazer"
 }
 
 // type 8
@@ -178,11 +192,13 @@ export type type8 = {
 export type type8w7 = {
     core: type8
     wing: type7
+    archetype: "maverick"
 }
 
 export type type8w9 = {
     core: type8
     wing: type9
+    archetype: "bear"
 }
 
 // type 9
@@ -198,9 +214,11 @@ export type type9 = {
 export type type9w8 = {
     core: type9
     wing: type8
+    archetype: "referee"
 }
 
 export type type9w1 = {
     core: type9
     wing: type1
+    archetype: "mediator"
 }
