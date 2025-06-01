@@ -20,7 +20,7 @@ type id = { name: "id" }
 type ego = { name: "ego" }
 type superego = { name: "superego" }
 
-// base types
+//type 1
 
 export type type1 = {
     name: "1",
@@ -29,12 +29,36 @@ export type type1 = {
     agent: superego
 }
 
+export type type1w9 = {
+    core: type1
+    wing: type9
+}
+
+export type type1w2 = {
+    core: type1
+    wing: type2
+}
+
+// type 2
+
 export type type2 = {
     name: "2",
     archetype: "helper"
     center: heart
     agent: superego
 }
+
+export type type2w1 = {
+    core: type2
+    wing: type1
+}
+
+export type type2w3 = {
+    core: type2
+    wing: type3
+}
+
+//type 3
 
 export type type3 = {
     name: "3",
@@ -43,11 +67,33 @@ export type type3 = {
     agent: ego
 }
 
+export type type3w2 = {
+    core: type3
+    wing: type2
+}
+
+export type type3w4 = {
+    core: type3
+    wing: type4
+}
+
+// type 4
+
 export type type4 = {
     name: "4",
     archetype: "romantic"
     center: heart
     agent: id
+}
+
+export type type4w3 = {
+    core: type4
+    wing: type3
+}
+
+export type type4w5 = {
+    core: type4
+    wing: type5
 }
 
 export type type5 = {
@@ -57,12 +103,36 @@ export type type5 = {
     agent: superego
 }
 
+export type type5w4 = {
+    core: type5
+    wing: type4
+}
+
+export type type5w6 = {
+    core: type5
+    wing: type6
+}
+
+// type 6
+
 export type type6 = {
     name: "6",
     archetype: "loyalist"
     center : head
     agent: ego
 }
+
+export type type6w5 = {
+    core: type6
+    wing: type5
+}
+
+export type type6w7 = {
+    core: type6
+    wing: type7
+}
+
+// type 7
 
 export type type7 = {
     name: "7",
@@ -71,6 +141,18 @@ export type type7 = {
     agent: id
 }
 
+export type type7w6 = {
+    core: type7
+    wing: type6
+}
+
+export type type7w8 = {
+    core: type7
+    wing: type8
+}
+
+// type 8
+
 export type type8 = {
     name: "8",
     archetype: "challenger"
@@ -78,9 +160,31 @@ export type type8 = {
     agent: id
 }
 
+export type type8w7 = {
+    core: type8
+    wing: type7
+}
+
+export type type8w9 = {
+    core: type8
+    wing: type9
+}
+
+// type 9
+
 export type type9 = {
     name: "9",
     archetype: "peacemaker"
     center: gut
     agent: ego
+}
+
+export type type9w8 = {
+    core: type9
+    wing: type8
+}
+
+export type type9w1 = {
+    core: type9
+    wing: type1
 }
