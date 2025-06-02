@@ -15,16 +15,19 @@ import {
 export const heart : Center = {
     name : "heart",
     emotion: "shame",
+    desire: "significance"
 }
 
 export const head : Center = {
     name : "head",
-    emotion: "fear"
+    emotion: "fear",
+    desire: "security"
 }
 
 export const gut : Center = {
     name : "gut",
-    emotion: "anger"
+    emotion: "anger",
+    desire: "autonomy"
 }
 
 // Freudian agents

@@ -7,6 +7,7 @@ type CenterOptions = "head" | "heart" | "gut"
 export interface Center {
     name: CenterOptions
     emotion: "shame" | "fear" | "anger"
+    desire: "significance" | "security" | "autonomy"
 }
 
 // Agent
