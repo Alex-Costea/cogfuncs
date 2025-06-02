@@ -53,4 +53,9 @@ export interface CogStack{
     tertiary: Link<CogFuncOptions>
     inferior: Link<CogFuncOptions>
     shadow: Link<CogStackOptions>
+    orientationShift: Link<CogStackOptions>
+    attitudeShift: Link<CogStackOptions>
+    thinkFeelShift: Link<CogStackOptions>
+    senseIntuitShift: Link<CogStackOptions>
+    mostDistant: Link<CogStackOptions>
 }

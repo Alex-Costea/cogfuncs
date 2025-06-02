@@ -129,6 +129,11 @@ export const TiNe : CogStack ={
     tertiary: new Link("Si"),
     inferior: new Link("Fe"),
     shadow: new Link("TeNi"),
+    orientationShift: new Link("NeTi"),
+    attitudeShift: new Link("NiTe"),
+    thinkFeelShift: new Link("FiNe"),
+    senseIntuitShift: new Link("TiSe"),
+    mostDistant: new Link("FeSi"),
 }
 
 export const TiSe : CogStack ={
@@ -139,6 +144,12 @@ export const TiSe : CogStack ={
     tertiary: new Link("Ni"),
     inferior: new Link("Fe"),
     shadow: new Link("TeSi"),
+    orientationShift: new Link("SeTi"),
+    attitudeShift: new Link("SiTe"),
+    thinkFeelShift: new Link("FiSe"),
+    senseIntuitShift: new Link("TiNe"),
+    mostDistant: new Link("FeNi"),
+
 }
 
 export const TeNi : CogStack ={
@@ -148,7 +159,12 @@ export const TeNi : CogStack ={
     secondary: new Link("Ni"),
     tertiary: new Link("Se"),
     inferior: new Link("Fi"),
-    shadow: new Link("TiNe")
+    shadow: new Link("TiNe"),
+    orientationShift: new Link("NiTe"),
+    attitudeShift: new Link("NeTi"),
+    thinkFeelShift: new Link("FeNi"),
+    senseIntuitShift: new Link("TeSi"),
+    mostDistant: new Link("FiSe"),
 }
 
 export const TeSi : CogStack ={
@@ -158,7 +174,12 @@ export const TeSi : CogStack ={
     secondary: new Link("Si"),
     tertiary: new Link("Ne"),
     inferior: new Link("Fi"),
-    shadow: new Link("TiSe")
+    shadow: new Link("TiSe"),
+    orientationShift: new Link("SiTe"),
+    attitudeShift: new Link("SeTi"),
+    thinkFeelShift: new Link("FeSi"),
+    senseIntuitShift: new Link("TeNi"),
+    mostDistant: new Link("FiNe"),
 }
 
 export const FiNe : CogStack ={
@@ -168,7 +189,12 @@ export const FiNe : CogStack ={
     secondary: new Link("Ne"),
     tertiary: new Link("Si"),
     inferior: new Link("Te"),
-    shadow: new Link("FeNi")
+    shadow: new Link("FeNi"),
+    orientationShift: new Link("NeFi"),
+    attitudeShift: new Link("NiFe"),
+    thinkFeelShift: new Link("TiNe"),
+    senseIntuitShift: new Link("FiSe"),
+    mostDistant: new Link("TeSi"),
 }
 
 export const FiSe : CogStack ={
@@ -178,7 +204,12 @@ export const FiSe : CogStack ={
     secondary: new Link("Se"),
     tertiary: new Link("Ni"),
     inferior: new Link("Te"),
-    shadow: new Link("FeSi")
+    shadow: new Link("FeSi"),
+    orientationShift: new Link("SeFi"),
+    attitudeShift: new Link("SiFe"),
+    thinkFeelShift: new Link("TiSe"),
+    senseIntuitShift: new Link("FiNe"),
+    mostDistant: new Link("TeNi"),
 }
 
 export const FeNi : CogStack ={
@@ -188,7 +219,12 @@ export const FeNi : CogStack ={
     secondary: new Link("Ni"),
     tertiary: new Link("Se"),
     inferior: new Link("Ti"),
-    shadow: new Link("FiNe")
+    shadow: new Link("FiNe"),
+    orientationShift: new Link("NiFe"),
+    attitudeShift: new Link("NeFi"),
+    thinkFeelShift: new Link("TeNi"),
+    senseIntuitShift: new Link("FeSi"),
+    mostDistant: new Link("TiSe"),
 }
 
 export const FeSi : CogStack ={
@@ -198,7 +234,12 @@ export const FeSi : CogStack ={
     secondary: new Link("Si"),
     tertiary: new Link("Ne"),
     inferior: new Link("Ti"),
-    shadow: new Link("FiSe")
+    shadow: new Link("FiSe"),
+    orientationShift: new Link("SiFe"),
+    attitudeShift: new Link("SeFi"),
+    thinkFeelShift: new Link("TeSi"),
+    senseIntuitShift: new Link("FeNi"),
+    mostDistant: new Link("TiNe"),
 }
 
 export const SiTe : CogStack ={
@@ -208,7 +249,12 @@ export const SiTe : CogStack ={
     secondary: new Link("Te"),
     tertiary: new Link("Fi"),
     inferior: new Link("Ne"),
-    shadow: new Link("SeTi")
+    shadow: new Link("SeTi"),
+    orientationShift: new Link("TeSi"),
+    attitudeShift: new Link("TiSe"),
+    thinkFeelShift: new Link("SiFe"),
+    senseIntuitShift: new Link("NiTe"),
+    mostDistant: new Link("NeFi"),
 }
 
 export const SiFe : CogStack ={
@@ -218,7 +264,12 @@ export const SiFe : CogStack ={
     secondary: new Link("Fe"),
     tertiary: new Link("Ti"),
     inferior: new Link("Ne"),
-    shadow: new Link("SeFi")
+    shadow: new Link("SeFi"),
+    orientationShift: new Link("FeSi"),
+    attitudeShift: new Link("FiSe"),
+    thinkFeelShift: new Link("SiTe"),
+    senseIntuitShift: new Link("NiFe"),
+    mostDistant: new Link("NeTi"),
 }
 
 export const SeTi : CogStack ={
@@ -228,7 +279,12 @@ export const SeTi : CogStack ={
     secondary: new Link("Ti"),
     tertiary: new Link("Fe"),
     inferior: new Link("Ni"),
-    shadow: new Link("SiTe")
+    shadow: new Link("SiTe"),
+    orientationShift: new Link("TiSe"),
+    attitudeShift: new Link("TeSi"),
+    thinkFeelShift: new Link("SeFi"),
+    senseIntuitShift: new Link("NeTi"),
+    mostDistant: new Link("NiFe"),
 }
 
 export const SeFi : CogStack ={
@@ -238,7 +294,12 @@ export const SeFi : CogStack ={
     secondary: new Link("Fi"),
     tertiary: new Link("Te"),
     inferior: new Link("Ni"),
-    shadow: new Link("SiFe")
+    shadow: new Link("SiFe"),
+    orientationShift: new Link("FiSe"),
+    attitudeShift: new Link("FeSi"),
+    thinkFeelShift: new Link("SeTi"),
+    senseIntuitShift: new Link("NeFi"),
+    mostDistant: new Link("NiTe"),
 }
 
 export const NiTe : CogStack ={
@@ -249,6 +310,11 @@ export const NiTe : CogStack ={
     tertiary: new Link("Fi"),
     inferior: new Link("Se"),
     shadow: new Link("NeTi"),
+    orientationShift: new Link("TeNi"),
+    attitudeShift: new Link("TiNe"),
+    thinkFeelShift: new Link("NiFe"),
+    senseIntuitShift: new Link("SiTe"),
+    mostDistant: new Link("SeFi"),
 }
 
 export const NiFe : CogStack ={
@@ -259,6 +325,11 @@ export const NiFe : CogStack ={
     tertiary: new Link("Ti"),
     inferior: new Link("Se"),
     shadow: new Link("NeFi"),
+    orientationShift: new Link("FeNi"),
+    attitudeShift: new Link("FiNe"),
+    thinkFeelShift: new Link("NiTe"),
+    senseIntuitShift: new Link("SiFe"),
+    mostDistant: new Link("SeTi"),
 }
 
 export const NeTi : CogStack ={
@@ -268,7 +339,12 @@ export const NeTi : CogStack ={
     secondary: new Link("Ti"),
     tertiary: new Link("Fe"),
     inferior: new Link("Si"),
-    shadow: new Link("NiTe")
+    shadow: new Link("NiTe"),
+    orientationShift: new Link("TiNe"),
+    attitudeShift: new Link("TeNi"),
+    thinkFeelShift: new Link("NeFi"),
+    senseIntuitShift: new Link("SeTi"),
+    mostDistant: new Link("SiFe"),
 }
 
 export const NeFi : CogStack ={
@@ -279,6 +355,11 @@ export const NeFi : CogStack ={
     tertiary: new Link("Te"),
     inferior: new Link("Si"),
     shadow: new Link("NiFe"),
+    orientationShift: new Link("FiNe"),
+    attitudeShift: new Link("FeNi"),
+    thinkFeelShift: new Link("NeTi"),
+    senseIntuitShift: new Link("SeFi"),
+    mostDistant: new Link("SiTe"),
 }
 
 export const cogfuncDataMap = {
