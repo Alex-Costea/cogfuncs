@@ -117,7 +117,7 @@ export const type1w2 : WingedGutType= {
 
 export const type2 : HeartType = {
     name: "2",
-    archetype: "helper",
+    archetype: "steward",
     center: new Link("heart"),
     agent: new Link("superego"),
     reaction: new Link("avoidant"),
@@ -148,7 +148,7 @@ export const type2w3 : WingedHeartType = {
 
 export const type3 : HeartType = {
     name: "3",
-    archetype: "performer",
+    archetype: "executive",
     center: new Link("heart"),
     agent: new Link("ego"),
     reaction: new Link("metabolizing"),
@@ -179,7 +179,7 @@ export const type3w4 : WingedHeartType = {
 
 export const type4 : HeartType = {
     name: "4",
-    archetype: "romantic",
+    archetype: "creator",
     center: new Link("heart"),
     agent: new Link("id"),
     reaction: new Link("reactive"),
@@ -210,7 +210,7 @@ export const type4w5 : WingedHeartType = {
 
 export const type5 : HeadType = {
     name: "5",
-    archetype: "observer",
+    archetype: "investigator",
     center: new Link("head"),
     agent: new Link("ego"),
     reaction: new Link("metabolizing"),
@@ -254,7 +254,7 @@ export const type6w5 : WingedHeadType = {
     name: "6w5",
     core: new Link("type6"),
     wing: new Link("type5"),
-    archetype: "skeptic",
+    archetype: "advisor",
     strength: "loyalty",
     integration: new Link("type9w8")
 }
@@ -263,7 +263,7 @@ export const type6w7 : WingedHeadType = {
     name: "6w7",
     core: new Link("type6"),
     wing: new Link("type7"),
-    archetype: "buddy",
+    archetype: "navigator",
     strength: "belonging",
     integration: new Link("type9w1")
 }
@@ -272,7 +272,7 @@ export const type6w7 : WingedHeadType = {
 
 export const type7 : HeadType = {
     name: "7",
-    archetype: "enthusiast",
+    archetype: "adventurer",
     center: new Link("head"),
     agent: new Link("id"),
     reaction: new Link("avoidant"),
@@ -325,7 +325,7 @@ export const type8w9 : WingedGutType = {
     name: "8w9",
     core: new Link("type8"),
     wing: new Link("type9"),
-    archetype: "bear",
+    archetype: "sovereign",
     strength: "presence",
     integration: new Link("type2w1")
 }
@@ -347,7 +347,7 @@ export const type9w8 : WingedGutType = {
     name: "9w8",
     core: new Link("type9"),
     wing: new Link("type8"),
-    archetype: "referee",
+    archetype: "arbiter",
     strength: "peace",
     integration: new Link("type3w2")
 }
