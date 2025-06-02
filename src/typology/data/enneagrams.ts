@@ -1,13 +1,9 @@
 import Link from "../types/Link.ts";
 import {
-    Agent,
-    Center,
-    GutType,
-    HeadType,
-    HeartType,
+    Agent, Center,
+    GutType, HeadType, HeartType,
     Reaction, Relation, Socializing,
-    WingedGutType, WingedHeadType,
-    WingedHeartType
+    WingedGutType, WingedHeadType, WingedHeartType
 } from "../types/enneagramTypes.ts";
 
 // center names
@@ -58,7 +54,7 @@ export const metabolizing : Reaction = {
     name : "metabolizing"
 }
 
-//Relation styles
+// Relation styles
 
 export const rejection : Relation ={
     name : "rejection"
@@ -86,8 +82,7 @@ export const internal : Socializing ={
     name : "internal"
 }
 
-
-// enneagram type 1
+// Enneagram type 1
 
 export const type1 : GutType = {
     name: "1",
@@ -118,7 +113,7 @@ export const type1w2 : WingedGutType= {
     integration: new Link("type7w6")
 }
 
-// enneagram type 2
+// Enneagram type 2
 
 export const type2 : HeartType = {
     name: "2",
@@ -149,7 +144,7 @@ export const type2w3 : WingedHeartType = {
     integration: new Link("type4w5")
 }
 
-// enneagram type 3
+// Enneagram type 3
 
 export const type3 : HeartType = {
     name: "3",
@@ -180,7 +175,7 @@ export const type3w4 : WingedHeartType = {
     integration: new Link("type6w7")
 }
 
-// enneagram type 4
+// Enneagram type 4
 
 export const type4 : HeartType = {
     name: "4",
@@ -211,7 +206,7 @@ export const type4w5 : WingedHeartType = {
     integration: new Link("type1w9")
 }
 
-// enneagram type 5
+// Enneagram type 5
 
 export const type5 : HeadType = {
     name: "5",
@@ -242,7 +237,7 @@ export const type5w6 : WingedHeadType = {
     integration: new Link("type8w7")
 }
 
-// enneagram type 6
+// Enneagram type 6
 
 export const type6 : HeadType = {
     name: "6",
@@ -273,7 +268,7 @@ export const type6w7 : WingedHeadType = {
     integration: new Link("type9w1")
 }
 
-// enneagram type 7
+// Enneagram type 7
 
 export const type7 : HeadType = {
     name: "7",
@@ -304,7 +299,7 @@ export const type7w8 : WingedHeadType = {
     integration: new Link("type5w6")
 }
 
-// enneagram type 8
+// Enneagram type 8
 
 export const type8 : GutType = {
     name: "8",
@@ -335,7 +330,7 @@ export const type8w9 : WingedGutType = {
     integration: new Link("type2w1")
 }
 
-// enneagram type 9
+// Enneagram type 9
 
 export const type9 : GutType = {
     name: "9",

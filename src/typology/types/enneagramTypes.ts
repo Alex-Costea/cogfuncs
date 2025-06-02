@@ -63,6 +63,8 @@ interface CoreType{
     reaction: Link<ReactionOptions>
     relation: Link<RelationOptions>
     socializing: Link<SocializingOptions>
+    // Note: integration takes the strength of another type
+    // Reverse integration is called retreat, and it's a loss of their own strength
     integration: Link<TypeOptions>
 }
 
@@ -70,7 +72,7 @@ export type HeartType = CoreType & {name : HeartNumbers}
 export type HeadType = CoreType & {name : HeadNumbers}
 export type GutType = CoreType & {name : GutNumbers}
 
-// winged types
+// Winged types
 
 export type WingedNumbers = "1w9" | "1w2" | "2w1" | "2w3" | "3w2" | "3w4" | "4w3" | "4w5" | "5w4" | "5w6" | "6w5" |
     "6w7" | "7w6" | "7w8" | "8w7" | "8w9" | "9w8" | "9w1"
@@ -90,14 +92,15 @@ export type WingedHeartType = WingedType & {core : Link<HeartTypeOptions>}
 export type WingedHeadType = WingedType & {core : Link<HeadTypeOptions>}
 export type WingedGutType = WingedType & {core : Link<GutTypeOptions>}
 
-// tri fixes
+// Tri fixes
+
 type TriFix = {
     heart : WingedHeartType
     head : WingedHeadType
     gut : WingedGutType
 }
 
-// enneagram
+// Psyche
 
 export type Psyche = {
     core: TriFix
