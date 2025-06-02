@@ -5,7 +5,7 @@ import {
     GutType,
     HeadType,
     HeartType,
-    Reaction,
+    Reaction, Relation,
     WingedGutType, WingedHeadType,
     WingedHeartType
 } from "../types/enneagramTypes.ts";
@@ -55,6 +55,20 @@ export const metabolizing : Reaction = {
     name : "metabolizing"
 }
 
+//Relation styles
+
+export const rejection : Relation ={
+    name : "rejection"
+}
+
+export const attachment : Relation ={
+    name : "attachment"
+}
+
+export const frustration : Relation ={
+    name : "frustration"
+}
+
 
 //export const 1
 
@@ -64,6 +78,7 @@ export const type1 : GutType = {
     center: new Link("gut"),
     agent: new Link("superego"),
     reaction: new Link("metabolizing"),
+    relation: new Link("frustration"),
     integration: new Link("type7")
 }
 
@@ -91,6 +106,7 @@ export const type2 : HeartType = {
     center: new Link("heart"),
     agent: new Link("superego"),
     reaction: new Link("avoidant"),
+    relation: new Link("rejection"),
     integration: new Link("type4")
 }
 
@@ -118,6 +134,7 @@ export const type3 : HeartType = {
     center: new Link("heart"),
     agent: new Link("ego"),
     reaction: new Link("metabolizing"),
+    relation: new Link("attachment"),
     integration: new Link("type6")
 }
 
@@ -145,6 +162,7 @@ export const type4 : HeartType = {
     center: new Link("heart"),
     agent: new Link("id"),
     reaction: new Link("reactive"),
+    relation: new Link("frustration"),
     integration: new Link("type1")
 }
 
@@ -170,6 +188,7 @@ export const type5 : HeadType = {
     center: new Link("head"),
     agent: new Link("ego"),
     reaction: new Link("metabolizing"),
+    relation: new Link("rejection"),
     integration: new Link("type8")
 }
 
@@ -197,6 +216,7 @@ export const type6 : HeadType = {
     center : new Link("head"),
     agent: new Link("superego"),
     reaction: new Link("reactive"),
+    relation: new Link("attachment"),
     integration: new Link("type9")
 }
 
@@ -224,6 +244,7 @@ export const type7 : HeadType = {
     center: new Link("head"),
     agent: new Link("id"),
     reaction: new Link("avoidant"),
+    relation: new Link("frustration"),
     integration: new Link("type5")
 }
 
@@ -251,6 +272,7 @@ export const type8 : GutType = {
     center: new Link("gut"),
     agent: new Link("id"),
     reaction: new Link("reactive"),
+    relation: new Link("rejection"),
     integration: new Link("type2")
 }
 
@@ -278,6 +300,7 @@ export const type9 : GutType = {
     center: new Link("gut"),
     agent: new Link("ego"),
     reaction: new Link("avoidant"),
+    relation: new Link("attachment"),
     integration: new Link("type3")
 }
 
@@ -299,48 +322,28 @@ export const type9w1 : WingedGutType = {
 
 export const dataMap = {
     // centers
-    heart,
-    head,
-    gut,
+    heart, head, gut,
 
     // freudian agents
-    id,
-    ego,
-    superego,
+    id, ego, superego,
 
     // reactions
-    reactive,
-    avoidant,
-    metabolizing,
+    reactive, avoidant, metabolizing,
+
+    // relations
+    rejection, attachment, frustration,
 
     // types
-    type1,
-    type2,
-    type3,
-    type4,
-    type5,
-    type6,
-    type7,
-    type8,
-    type9,
+    type1, type2, type3, type4, type5, type6, type7, type8, type9,
 
     // winged types
-    type1w9,
-    type1w2,
-    type2w1,
-    type2w3,
-    type3w2,
-    type3w4,
-    type4w3,
-    type4w5,
-    type5w4,
-    type5w6,
-    type6w5,
-    type6w7,
-    type7w6,
-    type7w8,
-    type8w7,
-    type8w9,
-    type9w8,
-    type9w1,
+    type1w9, type1w2,
+    type2w1, type2w3,
+    type3w2, type3w4,
+    type4w3, type4w5,
+    type5w4, type5w6,
+    type6w5, type6w7,
+    type7w6, type7w8,
+    type8w7, type8w9,
+    type9w8, type9w1,
 }

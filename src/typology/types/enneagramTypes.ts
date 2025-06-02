@@ -25,6 +25,14 @@ export interface Reaction {
     name: ReactionOptions
 }
 
+//Relation styles
+
+type RelationOptions = "rejection" | "attachment" | "frustration"
+
+export interface Relation{
+    name : RelationOptions
+}
+
 // Core types
 
 type HeartNumbers = "2" | "3" | "4"
@@ -44,6 +52,7 @@ interface CoreType{
     center: Link<CenterOptions>
     agent: Link<AgentOptions>
     reaction: Link<ReactionOptions>
+    relation: Link<RelationOptions>
     integration: Link<TypeOptions>
 }
 
