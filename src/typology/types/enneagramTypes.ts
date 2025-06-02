@@ -62,11 +62,13 @@ export type GutType = CoreType & {name : GutNumbers}
 
 // winged types
 
-export type WingedOptions = "type1w9" | "type1w2" | "type2w1" | "type2w3" | "type3w2" | "type3w4" | "type4w3" |
-    "type4w5" | "type5w4" | "type5w6" | "type6w5" | "type6w7" | "type7w6" | "type7w8" | "type8w7" | "type8w9" |
-    "type9w8" | "type9w1"
+export type WingedNumbers = "1w9" | "1w2" | "2w1" | "2w3" | "3w2" | "3w4" | "4w3" | "4w5" | "5w4" | "5w6" | "6w5" |
+    "6w7" | "7w6" | "7w8" | "8w7" | "8w9" | "9w8" | "9w1"
+
+export type WingedOptions = `type${WingedNumbers}`
 
 interface WingedType {
+    name : WingedNumbers
     core: Link<TypeOptions>
     wing: Link<TypeOptions>
     archetype: string
