@@ -63,21 +63,24 @@ export const type1 : GutType = {
     archetype: "reformer",
     center: new Link("gut"),
     agent: new Link("superego"),
-    reaction: new Link("metabolizing")
+    reaction: new Link("metabolizing"),
+    integration: new Link("type7")
 }
 
 export const type1w9 : WingedGutType= {
     core: new Link("type1"),
     wing: new Link("type9"),
     archetype: "idealist",
-    strength: "clarity"
+    strength: "clarity",
+    integration: new Link("type7w8")
 }
 
 export const type1w2 : WingedGutType= {
     core: new Link("type1"),
     wing: new Link("type2"),
     archetype: "advocate",
-    strength: "integrity"
+    strength: "integrity",
+    integration: new Link("type7w6")
 }
 
 // export const 2
@@ -87,21 +90,24 @@ export const type2 : HeartType = {
     archetype: "helper",
     center: new Link("heart"),
     agent: new Link("superego"),
-    reaction: new Link("avoidant")
+    reaction: new Link("avoidant"),
+    integration: new Link("type4")
 }
 
 export const type2w1 : WingedHeartType = {
     core: new Link("type2"),
     wing: new Link("type1"),
     archetype: "aide",
-    strength: "care"
+    strength: "care",
+    integration: new Link("type4w3")
 }
 
 export const type2w3 : WingedHeartType = {
     core: new Link("type2"),
     wing: new Link("type3"),
     archetype: "host",
-    strength: "connection"
+    strength: "connection",
+    integration: new Link("type4w5")
 }
 
 //export const 3
@@ -111,21 +117,24 @@ export const type3 : HeartType = {
     archetype: "performer",
     center: new Link("heart"),
     agent: new Link("ego"),
-    reaction: new Link("metabolizing")
+    reaction: new Link("metabolizing"),
+    integration: new Link("type6")
 }
 
 export const type3w2 : WingedHeartType = {
     core: new Link("type3"),
     wing: new Link("type2"),
     archetype: "motivator",
-    strength: "drive"
+    strength: "drive",
+    integration: new Link("type6w5")
 }
 
 export const type3w4 : WingedHeartType = {
     core: new Link("type3"),
     wing: new Link("type4"),
     archetype: "professional",
-    strength: "expression"
+    strength: "expression",
+    integration: new Link("type6w7")
 }
 
 // export const 4
@@ -135,21 +144,24 @@ export const type4 : HeartType = {
     archetype: "romantic",
     center: new Link("heart"),
     agent: new Link("id"),
-    reaction: new Link("reactive")
+    reaction: new Link("reactive"),
+    integration: new Link("type1")
 }
 
 export const type4w3 : WingedHeartType = {
     core: new Link("type4"),
     wing: new Link("type3"),
     archetype: "auteur",
-    strength: "identity"
+    strength: "identity",
+    integration: new Link("type1w2")
 }
 
 export const type4w5 : WingedHeartType = {
     core: new Link("type4"),
     wing: new Link("type5"),
     archetype: "mystic",
-    strength: "authenticity"
+    strength: "authenticity",
+    integration: new Link("type1w9")
 }
 
 export const type5 : HeadType = {
@@ -157,21 +169,24 @@ export const type5 : HeadType = {
     archetype: "observer",
     center: new Link("head"),
     agent: new Link("ego"),
-    reaction: new Link("metabolizing")
+    reaction: new Link("metabolizing"),
+    integration: new Link("type8")
 }
 
 export const type5w4 : WingedHeadType = {
     core: new Link("type5"),
     wing: new Link("type4"),
     archetype: "philosopher",
-    strength: "depth"
+    strength: "depth",
+    integration: new Link("type8w9")
 }
 
 export const type5w6 : WingedHeadType = {
     core: new Link("type5"),
     wing: new Link("type6"),
     archetype: "strategist",
-    strength: "focus"
+    strength: "focus",
+    integration: new Link("type8w7")
 }
 
 // export const 6
@@ -182,20 +197,23 @@ export const type6 : HeadType = {
     center : new Link("head"),
     agent: new Link("superego"),
     reaction: new Link("reactive"),
+    integration: new Link("type9")
 }
 
 export const type6w5 : WingedHeadType = {
     core: new Link("type6"),
     wing: new Link("type5"),
     archetype: "skeptic",
-    strength: "loyalty"
+    strength: "loyalty",
+    integration: new Link("type9w8")
 }
 
 export const type6w7 : WingedHeadType = {
     core: new Link("type6"),
     wing: new Link("type7"),
     archetype: "buddy",
-    strength: "belonging"
+    strength: "belonging",
+    integration: new Link("type9w1")
 }
 
 // export const 7
@@ -205,21 +223,24 @@ export const type7 : HeadType = {
     archetype: "enthusiast",
     center: new Link("head"),
     agent: new Link("id"),
-    reaction: new Link("avoidant")
+    reaction: new Link("avoidant"),
+    integration: new Link("type5")
 }
 
 export const type7w6 : WingedHeadType = {
     core: new Link("type7"),
     wing: new Link("type6"),
     archetype: "entertainer",
-    strength: "joy"
+    strength: "joy",
+    integration: new Link("type5w4")
 }
 
 export const type7w8 : WingedHeadType = {
     core: new Link("type7"),
     wing: new Link("type8"),
     archetype: "trailblazer",
-    strength: "freedom"
+    strength: "freedom",
+    integration: new Link("type5w6")
 }
 
 // export const 8
@@ -229,21 +250,24 @@ export const type8 : GutType = {
     archetype: "challenger",
     center: new Link("gut"),
     agent: new Link("id"),
-    reaction: new Link("reactive")
+    reaction: new Link("reactive"),
+    integration: new Link("type2")
 }
 
 export const type8w7 : WingedGutType = {
     core: new Link("type8"),
     wing: new Link("type7"),
     archetype: "maverick",
-    strength: "power"
+    strength: "power",
+    integration: new Link("type2w3")
 }
 
 export const type8w9 : WingedGutType = {
     core: new Link("type8"),
     wing: new Link("type9"),
     archetype: "bear",
-    strength: "presence"
+    strength: "presence",
+    integration: new Link("type2w1")
 }
 
 // export const 9
@@ -253,21 +277,24 @@ export const type9 : GutType = {
     archetype: "peacemaker",
     center: new Link("gut"),
     agent: new Link("ego"),
-    reaction: new Link("avoidant")
+    reaction: new Link("avoidant"),
+    integration: new Link("type3")
 }
 
 export const type9w8 : WingedGutType = {
     core: new Link("type9"),
     wing: new Link("type8"),
     archetype: "referee",
-    strength: "peace"
+    strength: "peace",
+    integration: new Link("type3w2")
 }
 
 export const type9w1 : WingedGutType = {
     core: new Link("type9"),
     wing: new Link("type1"),
     archetype: "mediator",
-    strength: "harmony"
+    strength: "harmony",
+    integration: new Link("type3w4")
 }
 
 export const dataMap = {

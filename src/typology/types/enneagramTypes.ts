@@ -44,6 +44,7 @@ interface CoreType{
     center: Link<CenterOptions>
     agent: Link<AgentOptions>
     reaction: Link<ReactionOptions>
+    integration: Link<TypeOptions>
 }
 
 export type HeartType = CoreType & {name : HeartNumbers}
@@ -52,11 +53,16 @@ export type GutType = CoreType & {name : GutNumbers}
 
 // winged types
 
+export type WingedOptions = "type1w9" | "type1w2" | "type2w1" | "type2w3" | "type3w2" | "type3w4" | "type4w3" |
+    "type4w5" | "type5w4" | "type5w6" | "type6w5" | "type6w7" | "type7w6" | "type7w8" | "type8w7" | "type8w9" |
+    "type9w8" | "type9w1"
+
 interface WingedType {
     core: Link<TypeOptions>
     wing: Link<TypeOptions>
     archetype: string
     strength : string
+    integration: Link<WingedOptions>
 }
 
 export type WingedHeartType = WingedType & {core : Link<HeartTypeOptions>}
