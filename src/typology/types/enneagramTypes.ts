@@ -56,6 +56,7 @@ interface WingedType {
     core: Link<TypeOptions>
     wing: Link<TypeOptions>
     archetype: string
+    strength : string
 }
 
 export type WingedHeartType = WingedType & {core : Link<HeartTypeOptions>}
