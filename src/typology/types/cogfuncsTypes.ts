@@ -50,4 +50,7 @@ export interface CogStack{
     mbtiEquivalent : mbtiOptions
     core: Link<CogFuncDomOptions>
     secondary: Link<CogFuncOptions>
+    tertiary: Link<CogFuncOptions>
+    inferior: Link<CogFuncOptions>
+    shadow: Link<CogStackOptions>
 }
