@@ -5,7 +5,7 @@ import {
     GutType,
     HeadType,
     HeartType,
-    Reaction, Relation,
+    Reaction, Relation, Socializing,
     WingedGutType, WingedHeadType,
     WingedHeartType
 } from "../types/enneagramTypes.ts";
@@ -72,8 +72,22 @@ export const frustration : Relation ={
     name : "frustration"
 }
 
+// Socializing styles
 
-//export const 1
+export const compliant : Socializing ={
+    name : "compliant"
+}
+
+export const assertive : Socializing ={
+    name : "assertive"
+}
+
+export const internal : Socializing ={
+    name : "internal"
+}
+
+
+// enneagram type 1
 
 export const type1 : GutType = {
     name: "1",
@@ -82,6 +96,7 @@ export const type1 : GutType = {
     agent: new Link("superego"),
     reaction: new Link("metabolizing"),
     relation: new Link("frustration"),
+    socializing: new Link("compliant"),
     integration: new Link("type7")
 }
 
@@ -103,7 +118,7 @@ export const type1w2 : WingedGutType= {
     integration: new Link("type7w6")
 }
 
-// export const 2
+// enneagram type 2
 
 export const type2 : HeartType = {
     name: "2",
@@ -112,6 +127,7 @@ export const type2 : HeartType = {
     agent: new Link("superego"),
     reaction: new Link("avoidant"),
     relation: new Link("rejection"),
+    socializing: new Link("compliant"),
     integration: new Link("type4")
 }
 
@@ -133,7 +149,7 @@ export const type2w3 : WingedHeartType = {
     integration: new Link("type4w5")
 }
 
-//export const 3
+// enneagram type 3
 
 export const type3 : HeartType = {
     name: "3",
@@ -142,6 +158,7 @@ export const type3 : HeartType = {
     agent: new Link("ego"),
     reaction: new Link("metabolizing"),
     relation: new Link("attachment"),
+    socializing: new Link("assertive"),
     integration: new Link("type6")
 }
 
@@ -163,7 +180,7 @@ export const type3w4 : WingedHeartType = {
     integration: new Link("type6w7")
 }
 
-// export const 4
+// enneagram type 4
 
 export const type4 : HeartType = {
     name: "4",
@@ -172,6 +189,7 @@ export const type4 : HeartType = {
     agent: new Link("id"),
     reaction: new Link("reactive"),
     relation: new Link("frustration"),
+    socializing: new Link("internal"),
     integration: new Link("type1")
 }
 
@@ -193,6 +211,8 @@ export const type4w5 : WingedHeartType = {
     integration: new Link("type1w9")
 }
 
+// enneagram type 5
+
 export const type5 : HeadType = {
     name: "5",
     archetype: "observer",
@@ -200,6 +220,7 @@ export const type5 : HeadType = {
     agent: new Link("ego"),
     reaction: new Link("metabolizing"),
     relation: new Link("rejection"),
+    socializing: new Link("internal"),
     integration: new Link("type8")
 }
 
@@ -221,7 +242,7 @@ export const type5w6 : WingedHeadType = {
     integration: new Link("type8w7")
 }
 
-// export const 6
+// enneagram type 6
 
 export const type6 : HeadType = {
     name: "6",
@@ -230,6 +251,7 @@ export const type6 : HeadType = {
     agent: new Link("superego"),
     reaction: new Link("reactive"),
     relation: new Link("attachment"),
+    socializing: new Link("compliant"),
     integration: new Link("type9")
 }
 
@@ -251,7 +273,7 @@ export const type6w7 : WingedHeadType = {
     integration: new Link("type9w1")
 }
 
-// export const 7
+// enneagram type 7
 
 export const type7 : HeadType = {
     name: "7",
@@ -260,6 +282,7 @@ export const type7 : HeadType = {
     agent: new Link("id"),
     reaction: new Link("avoidant"),
     relation: new Link("frustration"),
+    socializing: new Link("assertive"),
     integration: new Link("type5")
 }
 
@@ -281,7 +304,7 @@ export const type7w8 : WingedHeadType = {
     integration: new Link("type5w6")
 }
 
-// export const 8
+// enneagram type 8
 
 export const type8 : GutType = {
     name: "8",
@@ -290,6 +313,7 @@ export const type8 : GutType = {
     agent: new Link("id"),
     reaction: new Link("reactive"),
     relation: new Link("rejection"),
+    socializing: new Link("assertive"),
     integration: new Link("type2")
 }
 
@@ -311,7 +335,7 @@ export const type8w9 : WingedGutType = {
     integration: new Link("type2w1")
 }
 
-// export const 9
+// enneagram type 9
 
 export const type9 : GutType = {
     name: "9",
@@ -320,6 +344,7 @@ export const type9 : GutType = {
     agent: new Link("ego"),
     reaction: new Link("avoidant"),
     relation: new Link("attachment"),
+    socializing: new Link("internal"),
     integration: new Link("type3")
 }
 
@@ -341,7 +366,7 @@ export const type9w1 : WingedGutType = {
     integration: new Link("type3w4")
 }
 
-export const dataMap = {
+export const enneagramDataMap = {
     // centers
     heart, head, gut,
 
@@ -353,6 +378,9 @@ export const dataMap = {
 
     // relations
     rejection, attachment, frustration,
+
+    // socializing
+    compliant, assertive, internal,
 
     // types
     type1, type2, type3, type4, type5, type6, type7, type8, type9,

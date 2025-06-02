@@ -34,6 +34,14 @@ export interface Relation{
     name : RelationOptions
 }
 
+// Socializing styles
+
+type SocializingOptions = "compliant" | "assertive" | "internal"
+
+export interface Socializing{
+    name : SocializingOptions
+}
+
 // Core types
 
 type HeartNumbers = "2" | "3" | "4"
@@ -54,6 +62,7 @@ interface CoreType{
     agent: Link<AgentOptions>
     reaction: Link<ReactionOptions>
     relation: Link<RelationOptions>
+    socializing: Link<SocializingOptions>
     integration: Link<TypeOptions>
 }
 
