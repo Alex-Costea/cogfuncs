@@ -17,7 +17,6 @@ export default function CorePsyfuncPage(
     const relation = coreType.relation.value
     const socializing = coreType.socializing.value
     const subtypes = linksHere.filter(it => it.field == "core")
-    console.log(subtypes)
     const subtype1 = subtypes[0].name
     const subtype2 = subtypes[1].name
 
@@ -27,7 +26,8 @@ export default function CorePsyfuncPage(
             <p>
                 <strong>{name}</strong> is part of the {center.name} center, and as such it is responsible for dealing
                 with <strong>{center.emotion}</strong>. Its fundamental desire is <strong>{center.desire}</strong>,
-                and it deals with this by providing the strength of <strong>{coreType.strength}</strong>.
+                and it deals with this by using its unique strength of <strong>{coreType.strength}</strong>.</p>
+            <p>
                 In integration, it gains the positive attributes
                 of <Link to={findConceptPath(integrationCode)!}>{format(integrationCode)}</Link>,
                 specifically their <strong>{integration.strength}</strong>.
@@ -35,15 +35,18 @@ export default function CorePsyfuncPage(
                 negative traits of <Link to={findConceptPath(retreatCode)!}>{format(retreatCode)}</Link>.
             </p>
             <p>
-                In the Freudian model of the psyche, its agent is the <Link to={findConceptPath(agent)!}>{agent}</Link>.
                 It is <strong><Link to={findConceptPath(reaction)!}>{reaction}</Link></strong> towards its core emotion
                 of <strong>{center.emotion}</strong>,
                 and has a relation of <strong><Link to={findConceptPath(relation)!}>{relation}</Link></strong> towards
-                its perceived lack of <strong>{center.desire}</strong>. In social interactions, it tends to
+                its perceived lack of <strong>{center.desire}</strong>.
+                In the Freudian model of the psyche, its agent is the <Link to={findConceptPath(agent)!}>{agent}</Link>.
+                In social interactions, it tends to
                 be <strong><Link to={findConceptPath(socializing)!}>{socializing}</Link></strong>.
+            </p>
+            <p>
                 It has two
-                subtypes: <strong><Link to={findConceptPath(subtype1)!}>{format(subtype1)}</Link></strong> and <strong>
-                <Link to={findConceptPath(subtype2)!}>{format(subtype2)}</Link></strong>.
+                subfunctions: <strong><Link to={findConceptPath(subtype1)!}>{format(subtype1)}</Link>
+                </strong> and <strong><Link to={findConceptPath(subtype2)!}>{format(subtype2)}</Link></strong>.
             </p>
 
         </h2>

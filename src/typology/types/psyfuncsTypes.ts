@@ -80,7 +80,7 @@ export type WingedNumbers = "1w9" | "1w2" | "2w1" | "2w3" | "3w2" | "3w4" | "4w3
 
 export type WingedOptions = `type${WingedNumbers}`
 
-type WingedType = {
+export type WingedType = {
     code : WingedNumbers
     type : "wingedType"
     core: ConceptLink<TypeOptions>

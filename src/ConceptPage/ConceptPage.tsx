@@ -2,6 +2,7 @@ import {Link, useParams} from "react-router-dom";
 import {format, findConceptReferences, getDataPath} from "../utils/utils.ts";
 import GenericConceptPage from "../GenericConceptPage/GenericConceptPage.tsx";
 import CorePsyfuncPage from "../CorePsyfuncPage/CorePsyfuncPage.tsx";
+import WingedPsyfuncPage from "../WingedPsyfuncPage/WingedPsyfuncPage.tsx";
 
 export default function ConceptPage()
 {
@@ -10,6 +11,7 @@ export default function ConceptPage()
     const linksHere = findConceptReferences(item!)
 
     const isCorePsyfunc = concept?.type === "coreType"
+    const isWingedPsyfunc = concept?.type == "wingedType"
 
     return<>
         <nav>
@@ -17,12 +19,16 @@ export default function ConceptPage()
                 <Link to={`/${section}`}>← Back to {format(section!)} </Link>
                 <Link to={`/${section}/${subcategory}`}>← Back to {format(subcategory!)} </Link></strong>
             {
-                !isCorePsyfunc &&
+                !isCorePsyfunc && !isWingedPsyfunc &&
                 <GenericConceptPage item={item!} concept={concept} linksHere={linksHere}/>
             }
             {
                 isCorePsyfunc &&
                 <CorePsyfuncPage item={item!} concept={concept} linksHere={linksHere}/>
+            }
+            {
+                isWingedPsyfunc &&
+                <WingedPsyfuncPage item={item!} concept={concept}/>
             }
         </nav>
     </>
