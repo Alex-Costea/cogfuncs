@@ -31,8 +31,8 @@ export default function CorePsyfuncPage(
                 In integration, it gains the positive attributes
                 of <Link to={findConceptPath(integrationCode)!}>{format(integrationCode)}</Link>,
                 specifically their <strong>{integration.strength}</strong>.
-                However, it can also retreat from its <strong>{coreType.strength}</strong>, and start taking the
-                negative traits of <Link to={findConceptPath(retreatCode)!}>{format(retreatCode)}</Link>.
+                However, it can also retreat from its <strong>{coreType.strength}</strong>, and start taking on the
+                negative attributes of <Link to={findConceptPath(retreatCode)!}>{format(retreatCode)}</Link>.
             </p>
             <p>
                 It is <strong><Link to={findConceptPath(reaction)!}>{reaction}</Link></strong> towards its core emotion
