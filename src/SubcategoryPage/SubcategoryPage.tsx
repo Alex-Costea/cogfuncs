@@ -5,10 +5,12 @@ export default function SubcategoryPage(){
     const {section, subcategory} = useParams()
     const concepts = Object.keys(getDataPath(section!, subcategory!))
     return <>
+        <nav>
+            <strong><Link to={'/'}>← Back to Home Page</Link>
+                <Link to={`/${section}`}> ← Back to {format(section!)}</Link></strong>
+        </nav>
         <h1>{format(subcategory!)}</h1>
         <nav>
-            <h2><Link to={'/'}>← Back to Home Page</Link></h2>
-            <h2><Link to={`/${section}`}>← Back to {format(section!)}</Link></h2>
             {
                 concepts.map((name ) =>
                     <h2 key={name}>

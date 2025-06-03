@@ -1,5 +1,5 @@
 import './App.css'
-import {Route, Routes} from "react-router-dom";
+import {Link, Route, Routes} from "react-router-dom";
 import HomePage from "../HomePage/HomePage.tsx";
 import NotFound from "../NotFound/NotFound.tsx";
 import SectionPage from "../SectionPage/SectionPage.tsx";
@@ -10,7 +10,7 @@ function App() {
 
   return (
       <div>
-          <img src={"/cogfuncs.svg"} width={"300px"} alt={"Cogfuncs"}/>
+          <Link to={"/"}><img src={"/cogfuncs.svg"} width={"300px"} alt={"Cogfuncs"}/></Link>
           <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/:section" element={<SectionPage />} />

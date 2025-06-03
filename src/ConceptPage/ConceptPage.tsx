@@ -21,9 +21,9 @@ export default function ConceptPage()
 
     return <>
         <nav>
-            <h2><Link to={'/'}>← Back to Home Page</Link></h2>
-            <h2><Link to={`/${section}`}>← Back to {format(section!)}</Link></h2>
-            <h2><Link to={`/${section}/${subcategory}`}>← Back to {format(subcategory!)}</Link></h2>
+            <strong><Link to={'/'}>← Back to Home Page </Link>
+            <Link to={`/${section}`}>← Back to {format(section!)} </Link>
+            <Link to={`/${section}/${subcategory}`}>← Back to {format(subcategory!)} </Link></strong>
         </nav>
         <h1>{format(item!)}</h1>
         {
