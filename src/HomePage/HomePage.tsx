@@ -1,5 +1,5 @@
 import {dataMap} from "../typology/dataMap.ts";
-import {capitalize} from "../utils/utils.ts";
+import {format} from "../utils/utils.ts";
 import {Link} from "react-router-dom";
 
 export default function HomePage() {
@@ -10,7 +10,7 @@ export default function HomePage() {
             {
                 categories.map((name) =>
                     <h2 key={name}>
-                        <Link to={`/${name}`}>{capitalize(name)}</Link>
+                        <Link to={`/${name}`}>{format(name)}</Link>
                     </h2>)
             }
         </>
