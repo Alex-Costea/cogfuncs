@@ -163,7 +163,7 @@ export const type3w2 : WingedHeartType = {
     wing: new Link("type2"),
     archetype: "motivator",
     strength: "drive",
-    integration: new Link("type6w5")
+    integration: new Link("type6w7")
 }
 
 export const type3w4 : WingedHeartType = {
@@ -172,7 +172,7 @@ export const type3w4 : WingedHeartType = {
     wing: new Link("type4"),
     archetype: "professional",
     strength: "expression",
-    integration: new Link("type6w7")
+    integration: new Link("type6w5")
 }
 
 // Enneagram type 4
@@ -256,7 +256,7 @@ export const type6w5 : WingedHeadType = {
     wing: new Link("type5"),
     archetype: "advisor",
     strength: "loyalty",
-    integration: new Link("type9w8")
+    integration: new Link("type9w1")
 }
 
 export const type6w7 : WingedHeadType = {
@@ -265,7 +265,7 @@ export const type6w7 : WingedHeadType = {
     wing: new Link("type7"),
     archetype: "navigator",
     strength: "belonging",
-    integration: new Link("type9w1")
+    integration: new Link("type9w8")
 }
 
 // Enneagram type 7
@@ -349,7 +349,7 @@ export const type9w8 : WingedGutType = {
     wing: new Link("type8"),
     archetype: "arbiter",
     strength: "peace",
-    integration: new Link("type3w2")
+    integration: new Link("type3w4")
 }
 
 export const type9w1 : WingedGutType = {
@@ -358,7 +358,7 @@ export const type9w1 : WingedGutType = {
     wing: new Link("type1"),
     archetype: "mediator",
     strength: "harmony",
-    integration: new Link("type3w4")
+    integration: new Link("type3w2")
 }
 
 export const enneagramDataMap = {
