@@ -1,11 +1,14 @@
 import {dataMap} from "../typology/dataMap.ts";
+import ConceptLink from "../typology/types/ConceptLink.ts";
 
 export function format(word: string): string {
     if (!word) return ''
 
-    // remove "type" prefix if present
     if (word.startsWith('type')) {
-        word = word.slice(4)
+        const typePath = findConceptPath(word)!.substring(1).split("/")
+        const data = getDataPath(...typePath) as {archetype : string, center : ConceptLink}
+        const center = format(data.center.value)
+        word = `The ${data.archetype} ${center} (${word.slice(4)})`
     }
 
     // insert space before capital letters (camelCase or PascalCase)

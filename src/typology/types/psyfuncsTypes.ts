@@ -56,7 +56,7 @@ type TypeOptions = `type${EnneagramNumber}`
 
 
 interface CoreType{
-    name : EnneagramNumber
+    code : EnneagramNumber
     archetype: string
     center: ConceptLink<CenterOptions>
     agent: ConceptLink<AgentOptions>
@@ -79,9 +79,10 @@ export type WingedNumbers = "1w9" | "1w2" | "2w1" | "2w3" | "3w2" | "3w4" | "4w3
 export type WingedOptions = `type${WingedNumbers}`
 
 interface WingedType {
-    name : WingedNumbers
+    code : WingedNumbers
     core: ConceptLink<TypeOptions>
     wing: ConceptLink<TypeOptions>
+    center: ConceptLink<CenterOptions>
     archetype: string
     strength : string
     integration: ConceptLink<WingedOptions>

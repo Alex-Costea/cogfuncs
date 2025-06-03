@@ -97,9 +97,10 @@ export const type1 : GutType = {
 }
 
 export const type1w9 : WingedGutType= {
-    name: "1w9",
+    code: "1w9",
     core: new ConceptLink("type1"),
     wing: new ConceptLink("type9"),
+    center: new ConceptLink("gut"),
     archetype: "idealist",
     strength: "clarity",
     integration: new ConceptLink("type7w8"),
@@ -107,9 +108,10 @@ export const type1w9 : WingedGutType= {
 }
 
 export const type1w2 : WingedGutType= {
-    name: "1w2",
+    code: "1w2",
     core: new ConceptLink("type1"),
     wing: new ConceptLink("type2"),
+    center: new ConceptLink("gut"),
     archetype: "advocate",
     strength: "integrity",
     integration: new ConceptLink("type7w6"),
@@ -131,9 +133,10 @@ export const type2 : HeartType = {
 }
 
 export const type2w1 : WingedHeartType = {
-    name: "2w1",
+    code: "2w1",
     core: new ConceptLink("type2"),
     wing: new ConceptLink("type1"),
+    center: new ConceptLink("heart"),
     archetype: "aide",
     strength: "care",
     integration: new ConceptLink("type4w3"),
@@ -141,9 +144,10 @@ export const type2w1 : WingedHeartType = {
 }
 
 export const type2w3 : WingedHeartType = {
-    name: "2w3",
+    code: "2w3",
     core: new ConceptLink("type2"),
     wing: new ConceptLink("type3"),
+    center: new ConceptLink("heart"),
     archetype: "host",
     strength: "connection",
     integration: new ConceptLink("type4w5"),
@@ -165,9 +169,10 @@ export const type3 : HeartType = {
 }
 
 export const type3w2 : WingedHeartType = {
-    name: "3w2",
+    code: "3w2",
     core: new ConceptLink("type3"),
     wing: new ConceptLink("type2"),
+    center: new ConceptLink("heart"),
     archetype: "motivator",
     strength: "drive",
     integration: new ConceptLink("type6w7"),
@@ -175,9 +180,10 @@ export const type3w2 : WingedHeartType = {
 }
 
 export const type3w4 : WingedHeartType = {
-    name: "3w4",
+    code: "3w4",
     core: new ConceptLink("type3"),
     wing: new ConceptLink("type4"),
+    center: new ConceptLink("heart"),
     archetype: "professional",
     strength: "expression",
     integration: new ConceptLink("type6w5"),
@@ -199,9 +205,10 @@ export const type4 : HeartType = {
 }
 
 export const type4w3 : WingedHeartType = {
-    name: "4w3",
+    code: "4w3",
     core: new ConceptLink("type4"),
     wing: new ConceptLink("type3"),
+    center: new ConceptLink("heart"),
     archetype: "auteur",
     strength: "identity",
     integration: new ConceptLink("type1w2"),
@@ -209,9 +216,10 @@ export const type4w3 : WingedHeartType = {
 }
 
 export const type4w5 : WingedHeartType = {
-    name: "4w5",
+    code: "4w5",
     core: new ConceptLink("type4"),
     wing: new ConceptLink("type5"),
+    center: new ConceptLink("heart"),
     archetype: "mystic",
     strength: "authenticity",
     integration: new ConceptLink("type1w9"),
@@ -233,9 +241,10 @@ export const type5 : HeadType = {
 }
 
 export const type5w4 : WingedHeadType = {
-    name: "5w4",
+    code: "5w4",
     core: new ConceptLink("type5"),
     wing: new ConceptLink("type4"),
+    center: new ConceptLink("head"),
     archetype: "philosopher",
     strength: "depth",
     integration: new ConceptLink("type8w9"),
@@ -243,9 +252,10 @@ export const type5w4 : WingedHeadType = {
 }
 
 export const type5w6 : WingedHeadType = {
-    name: "5w6",
+    code: "5w6",
     core: new ConceptLink("type5"),
     wing: new ConceptLink("type6"),
+    center: new ConceptLink("head"),
     archetype: "strategist",
     strength: "focus",
     integration: new ConceptLink("type8w7"),
@@ -267,9 +277,10 @@ export const type6 : HeadType = {
 }
 
 export const type6w5 : WingedHeadType = {
-    name: "6w5",
+    code: "6w5",
     core: new ConceptLink("type6"),
     wing: new ConceptLink("type5"),
+    center: new ConceptLink("head"),
     archetype: "advisor",
     strength: "loyalty",
     integration: new ConceptLink("type9w1"),
@@ -277,9 +288,10 @@ export const type6w5 : WingedHeadType = {
 }
 
 export const type6w7 : WingedHeadType = {
-    name: "6w7",
+    code: "6w7",
     core: new ConceptLink("type6"),
     wing: new ConceptLink("type7"),
+    center: new ConceptLink("head"),
     archetype: "navigator",
     strength: "belonging",
     integration: new ConceptLink("type9w8"),
@@ -301,9 +313,10 @@ export const type7 : HeadType = {
 }
 
 export const type7w6 : WingedHeadType = {
-    name: "7w6",
+    code: "7w6",
     core: new ConceptLink("type7"),
     wing: new ConceptLink("type6"),
+    center: new ConceptLink("head"),
     archetype: "entertainer",
     strength: "joy",
     integration: new ConceptLink("type5w4"),
@@ -311,9 +324,10 @@ export const type7w6 : WingedHeadType = {
 }
 
 export const type7w8 : WingedHeadType = {
-    name: "7w8",
+    code: "7w8",
     core: new ConceptLink("type7"),
     wing: new ConceptLink("type8"),
+    center: new ConceptLink("head"),
     archetype: "trailblazer",
     strength: "freedom",
     integration: new ConceptLink("type5w6"),
@@ -335,9 +349,10 @@ export const type8 : GutType = {
 }
 
 export const type8w7 : WingedGutType = {
-    name: "8w7",
+    code: "8w7",
     core: new ConceptLink("type8"),
     wing: new ConceptLink("type7"),
+    center: new ConceptLink("gut"),
     archetype: "maverick",
     strength: "power",
     integration: new ConceptLink("type2w3"),
@@ -345,9 +360,10 @@ export const type8w7 : WingedGutType = {
 }
 
 export const type8w9 : WingedGutType = {
-    name: "8w9",
+    code: "8w9",
     core: new ConceptLink("type8"),
     wing: new ConceptLink("type9"),
+    center: new ConceptLink("gut"),
     archetype: "sovereign",
     strength: "presence",
     integration: new ConceptLink("type2w1"),
@@ -369,9 +385,10 @@ export const type9 : GutType = {
 }
 
 export const type9w8 : WingedGutType = {
-    name: "9w8",
+    code: "9w8",
     core: new ConceptLink("type9"),
     wing: new ConceptLink("type8"),
+    center: new ConceptLink("gut"),
     archetype: "arbiter",
     strength: "peace",
     integration: new ConceptLink("type3w4"),
@@ -379,9 +396,10 @@ export const type9w8 : WingedGutType = {
 }
 
 export const type9w1 : WingedGutType = {
-    name: "9w1",
+    code: "9w1",
     core: new ConceptLink("type9"),
     wing: new ConceptLink("type1"),
+    center: new ConceptLink("gut"),
     archetype: "mediator",
     strength: "harmony",
     integration: new ConceptLink("type3w2"),
