@@ -55,10 +55,11 @@ type EnneagramNumber = HeartNumbers | HeadNumbers | GutNumbers
 type TypeOptions = `type${EnneagramNumber}`
 
 
-type CoreType = {
+export type CoreType = {
     code : EnneagramNumber
     type : "coreType"
     archetype: string
+    strength : string
     center: ConceptLink<CenterOptions>
     agent: ConceptLink<AgentOptions>
     reaction: ConceptLink<ReactionOptions>

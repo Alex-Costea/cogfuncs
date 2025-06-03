@@ -5,8 +5,7 @@ export function format(word: string): string {
     if (!word) return ''
 
     if (word.startsWith('type')) {
-        const typePath = findConceptPath(word)!.substring(1).split("/")
-        const data = getDataPath(...typePath) as {archetype : string, center : ConceptLink}
+        const data = getObject(word) as {archetype : string, center : ConceptLink}
         const center = format(data.center.value)
         word = `The ${data.archetype} ${center} (${word.slice(4)})`
     }
@@ -56,6 +55,12 @@ export function findConceptPath(target : string): string | null {
     }
 
     return null
+}
+
+export function getObject(name : string) : Record<string, unknown>
+{
+    const typePath = findConceptPath(name)!.substring(1).split("/")
+    return getDataPath(...typePath)
 }
 
 export type ReferenceResult = {
