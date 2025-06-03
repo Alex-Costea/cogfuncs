@@ -10,7 +10,7 @@ function App() {
 
   return (
       <div>
-          <img src={"./cogfuncs.svg"} width={"300px"} alt={"Cogfuncs"}/>
+          <img src={"/cogfuncs.svg"} width={"300px"} alt={"Cogfuncs"}/>
           <Routes>
               <Route path="/" element={<HomePage />} />
               <Route path="/:section" element={<SectionPage />} />
