@@ -83,48 +83,48 @@ export const Ne: CogFunc = {
 
 export const TiDom : DomType ={
     name: "TiDom",
-    dominant: new ConceptLink("Ti")
+    core: new ConceptLink("Ti")
 }
 
 export const TeDom : DomType ={
     name: "TeDom",
-    dominant: new ConceptLink("Te")
+    core: new ConceptLink("Te")
 }
 
 export const FiDom : DomType ={
     name: "FiDom",
-    dominant: new ConceptLink("Fi")
+    core: new ConceptLink("Fi")
 }
 
 export const FeDom : DomType ={
     name: "FeDom",
-    dominant: new ConceptLink("Fe")
+    core: new ConceptLink("Fe")
 }
 
 export const SiDom : DomType ={
     name: "SiDom",
-    dominant: new ConceptLink("Si")
+    core: new ConceptLink("Si")
 }
 
 export const SeDom : DomType ={
     name: "SeDom",
-    dominant: new ConceptLink("Se")
+    core: new ConceptLink("Se")
 }
 
 export const NiDom : DomType ={
     name: "NiDom",
-    dominant: new ConceptLink("Ni")
+    core: new ConceptLink("Ni")
 }
 
 export const NeDom : DomType ={
     name: "NeDom",
-    dominant: new ConceptLink("Ne")
+    core: new ConceptLink("Ne")
 }
 
 export const TiNe : CogStack ={
     name: "TiNe",
     mbtiEquivalent: "INTP",
-    core: new ConceptLink("TiDom"),
+    parentType: new ConceptLink("TiDom"),
     dominant: new ConceptLink("Ti"),
     secondary: new ConceptLink("Ne"),
     tertiary: new ConceptLink("Si"),
@@ -140,7 +140,7 @@ export const TiNe : CogStack ={
 export const TiSe : CogStack ={
     name: "TiSe",
     mbtiEquivalent: "ISTP",
-    core: new ConceptLink("TiDom"),
+    parentType: new ConceptLink("TiDom"),
     dominant: new ConceptLink("Ti"),
     secondary: new ConceptLink("Se"),
     tertiary: new ConceptLink("Ni"),
@@ -157,7 +157,7 @@ export const TiSe : CogStack ={
 export const TeNi : CogStack ={
     name: "TeNi",
     mbtiEquivalent: "ENTJ",
-    core: new ConceptLink("TeDom"),
+    parentType: new ConceptLink("TeDom"),
     dominant: new ConceptLink("Te"),
     secondary: new ConceptLink("Ni"),
     tertiary: new ConceptLink("Se"),
@@ -173,7 +173,7 @@ export const TeNi : CogStack ={
 export const TeSi : CogStack ={
     name: "TeSi",
     mbtiEquivalent: "ESTJ",
-    core: new ConceptLink("TeDom"),
+    parentType: new ConceptLink("TeDom"),
     dominant: new ConceptLink("Te"),
     secondary: new ConceptLink("Si"),
     tertiary: new ConceptLink("Ne"),
@@ -189,7 +189,7 @@ export const TeSi : CogStack ={
 export const FiNe : CogStack ={
     name: "FiNe",
     mbtiEquivalent: "INFP",
-    core: new ConceptLink("FiDom"),
+    parentType: new ConceptLink("FiDom"),
     dominant: new ConceptLink("Fi"),
     secondary: new ConceptLink("Ne"),
     tertiary: new ConceptLink("Si"),
@@ -205,7 +205,7 @@ export const FiNe : CogStack ={
 export const FiSe : CogStack ={
     name: "FiSe",
     mbtiEquivalent: "ISFP",
-    core: new ConceptLink("FiDom"),
+    parentType: new ConceptLink("FiDom"),
     dominant: new ConceptLink("Fi"),
     secondary: new ConceptLink("Se"),
     tertiary: new ConceptLink("Ni"),
@@ -221,7 +221,7 @@ export const FiSe : CogStack ={
 export const FeNi : CogStack ={
     name: "FeNi",
     mbtiEquivalent: "ENFJ",
-    core: new ConceptLink("FeDom"),
+    parentType: new ConceptLink("FeDom"),
     dominant: new ConceptLink("Fe"),
     secondary: new ConceptLink("Ni"),
     tertiary: new ConceptLink("Se"),
@@ -237,7 +237,7 @@ export const FeNi : CogStack ={
 export const FeSi : CogStack ={
     name: "FeSi",
     mbtiEquivalent: "ESFJ",
-    core: new ConceptLink("FeDom"),
+    parentType: new ConceptLink("FeDom"),
     dominant: new ConceptLink("Fe"),
     secondary: new ConceptLink("Si"),
     tertiary: new ConceptLink("Ne"),
@@ -253,7 +253,7 @@ export const FeSi : CogStack ={
 export const SiTe : CogStack ={
     name: "SiTe",
     mbtiEquivalent: "ISTJ",
-    core: new ConceptLink("SiDom"),
+    parentType: new ConceptLink("SiDom"),
     dominant: new ConceptLink("Si"),
     secondary: new ConceptLink("Te"),
     tertiary: new ConceptLink("Fi"),
@@ -269,7 +269,7 @@ export const SiTe : CogStack ={
 export const SiFe : CogStack ={
     name: "SiFe",
     mbtiEquivalent: "ISFJ",
-    core: new ConceptLink("SiDom"),
+    parentType: new ConceptLink("SiDom"),
     dominant: new ConceptLink("Si"),
     secondary: new ConceptLink("Fe"),
     tertiary: new ConceptLink("Ti"),
@@ -285,7 +285,7 @@ export const SiFe : CogStack ={
 export const SeTi : CogStack ={
     name: "SeTi",
     mbtiEquivalent: "ESTP",
-    core: new ConceptLink("SeDom"),
+    parentType: new ConceptLink("SeDom"),
     dominant: new ConceptLink("Se"),
     secondary: new ConceptLink("Ti"),
     tertiary: new ConceptLink("Fe"),
@@ -301,7 +301,7 @@ export const SeTi : CogStack ={
 export const SeFi : CogStack ={
     name: "SeFi",
     mbtiEquivalent: "ESFP",
-    core: new ConceptLink("SeDom"),
+    parentType: new ConceptLink("SeDom"),
     dominant: new ConceptLink("Se"),
     secondary: new ConceptLink("Fi"),
     tertiary: new ConceptLink("Te"),
@@ -317,7 +317,7 @@ export const SeFi : CogStack ={
 export const NiTe : CogStack ={
     name: "NiTe",
     mbtiEquivalent: "INTJ",
-    core: new ConceptLink("NiDom"),
+    parentType: new ConceptLink("NiDom"),
     dominant: new ConceptLink("Ni"),
     secondary: new ConceptLink("Te"),
     tertiary: new ConceptLink("Fi"),
@@ -333,7 +333,7 @@ export const NiTe : CogStack ={
 export const NiFe : CogStack ={
     name: "NiFe",
     mbtiEquivalent: "INFJ",
-    core: new ConceptLink("NiDom"),
+    parentType: new ConceptLink("NiDom"),
     dominant: new ConceptLink("Ni"),
     secondary: new ConceptLink("Fe"),
     tertiary: new ConceptLink("Ti"),
@@ -349,7 +349,7 @@ export const NiFe : CogStack ={
 export const NeTi : CogStack ={
     name: "NeTi",
     mbtiEquivalent: "ENTP",
-    core: new ConceptLink("NeDom"),
+    parentType: new ConceptLink("NeDom"),
     dominant: new ConceptLink("Ne"),
     secondary: new ConceptLink("Ti"),
     tertiary: new ConceptLink("Fe"),
@@ -365,7 +365,7 @@ export const NeTi : CogStack ={
 export const NeFi : CogStack ={
     name: "NeFi",
     mbtiEquivalent: "ENFP",
-    core: new ConceptLink("NeDom"),
+    parentType: new ConceptLink("NeDom"),
     dominant: new ConceptLink("Ne"),
     secondary: new ConceptLink("Fi"),
     tertiary: new ConceptLink("Te"),

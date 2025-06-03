@@ -31,7 +31,7 @@ type CogFuncDomOptions = `${CogFuncOptions}Dom`
 
 export interface DomType{
     name : CogFuncDomOptions
-    dominant: ConceptLink<CogFuncOptions>
+    core: ConceptLink<CogFuncOptions>
 }
 
 type CogStackOptions = "TiNe" | "TiSe" | "TeNi" | "TeSi" |
@@ -48,7 +48,7 @@ type mbtiOptions = "INTP" | "ISTP" | "ENTJ" | "ESTJ" |
 export interface CogStack{
     name: CogStackOptions
     mbtiEquivalent : mbtiOptions
-    core: ConceptLink<CogFuncDomOptions>
+    parentType: ConceptLink<CogFuncDomOptions>
     dominant: ConceptLink<CogFuncOptions>
     secondary: ConceptLink<CogFuncOptions>
     tertiary: ConceptLink<CogFuncOptions>
