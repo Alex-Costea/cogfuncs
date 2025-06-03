@@ -6,7 +6,9 @@ export default function ConceptPage()
 {
     const { section, subcategory, item } = useParams()
     const concept = getDataPath(section!, subcategory!, item!)
-    const conceptEntries = Object.entries(concept)
+    const conceptEntries = Object.entries(concept).filter(
+        ([key]) => key !== 'type'
+    )
     const mapsBackHere = findConceptReferences(item!)
 
     function display(value : unknown) : string{
@@ -29,17 +31,17 @@ export default function ConceptPage()
                 <h2>{format(key)}: {
                     isLink(value)?
                         <Link to={findConceptPath(value.value)!}>{display(value)}</Link>
-                        :display(value)
+                        :<strong>{display(value)}</strong>
                 }</h2>
             )
         }
         {
             mapsBackHere.length>0?<>
-                <h2>Concepts linked to this page:</h2>
                 {mapsBackHere.map(value =>
-                    <h3><Link to={findConceptPath(value.name)!}>
-                        {format(value.name)} has {format(item!)} as its {format(value.field)}
-                    </Link></h3>)
+                    <h2>
+                        <Link to={findConceptPath(value.name)!}>{format(value.name)} </Link>
+                        has <strong>{format(item!)}</strong> as its <strong>{format(value.field)}</strong>
+                    </h2>)
                 }
             </> :''
         }
