@@ -49,6 +49,7 @@ export interface CogStack{
     name: CogStackOptions
     mbtiEquivalent : mbtiOptions
     core: ConceptLink<CogFuncDomOptions>
+    dominant: ConceptLink<CogFuncOptions>
     secondary: ConceptLink<CogFuncOptions>
     tertiary: ConceptLink<CogFuncOptions>
     inferior: ConceptLink<CogFuncOptions>
