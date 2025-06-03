@@ -1,4 +1,4 @@
-import Link from "./Link.ts";
+import ConceptLink from "./ConceptLink.ts";
 
 type InstinctOptions = "So" | "Sx" | "Sp"
 
@@ -10,6 +10,6 @@ type InstinctStackOption = "So/Sx" | "So/Sp" | "Sx/So" | "Sx/Sp" | "Sp/So" | "Sp
 
 export interface InstinctStack{
     name: InstinctStackOption
-    primary: Link<InstinctOptions>
-    secondary: Link<InstinctOptions>
+    primary: ConceptLink<InstinctOptions>
+    secondary: ConceptLink<InstinctOptions>
 }

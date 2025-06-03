@@ -9,13 +9,16 @@ import ConceptPage from "../ConceptPage/ConceptPage.tsx";
 function App() {
 
   return (
-      <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/:section" element={<SectionPage />} />
-          <Route path="/:section/:subcategory" element={<SubcategoryPage />} />
-          <Route path="/:section/:subcategory/:item" element={<ConceptPage />} />
-          <Route path="*" element={<NotFound />} />
-      </Routes>
+      <div>
+          <img src={"./cogfuncs.svg"} width={"300px"} alt={"Cogfuncs"}/>
+          <Routes>
+              <Route path="/" element={<HomePage />} />
+              <Route path="/:section" element={<SectionPage />} />
+              <Route path="/:section/:subcategory" element={<SubcategoryPage />} />
+              <Route path="/:section/:subcategory/:item" element={<ConceptPage />} />
+              <Route path="*" element={<NotFound />} />
+          </Routes>
+      </div>
   )
 }
 

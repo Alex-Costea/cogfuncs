@@ -1,5 +1,5 @@
 import {Instinct, InstinctStack} from "../types/instinctTypes.ts";
-import Link from "../types/Link.ts";
+import ConceptLink from "../types/ConceptLink.ts";
 
 
 export const So : Instinct = {
@@ -16,36 +16,36 @@ export const Sp : Instinct ={
 
 export const SoSx : InstinctStack = {
     name: "So/Sx",
-    primary: new Link("So"),
-    secondary: new Link("Sx")
+    primary: new ConceptLink("So"),
+    secondary: new ConceptLink("Sx")
 }
 
 export const SoSp : InstinctStack = {
     name: "So/Sp",
-    primary: new Link("So"),
-    secondary: new Link("Sp")
+    primary: new ConceptLink("So"),
+    secondary: new ConceptLink("Sp")
 }
 
 export const SxSo : InstinctStack = {
     name: "Sx/So",
-    primary: new Link("Sx"),
-    secondary: new Link("So")
+    primary: new ConceptLink("Sx"),
+    secondary: new ConceptLink("So")
 }
 
 export const SxSp : InstinctStack = {
     name: "Sx/Sp",
-    primary: new Link("Sx"),
-    secondary: new Link("Sp")
+    primary: new ConceptLink("Sx"),
+    secondary: new ConceptLink("Sp")
 }
 
 export const SpSo : InstinctStack = {
     name: "Sp/So",
-    primary: new Link("Sp"),
-    secondary: new Link("So")
+    primary: new ConceptLink("Sp"),
+    secondary: new ConceptLink("So")
 }
 
 export const SpSx : InstinctStack = {
     name: "Sp/Sx",
-    primary: new Link("Sp"),
-    secondary: new Link("Sx")
+    primary: new ConceptLink("Sp"),
+    secondary: new ConceptLink("Sx")
 }

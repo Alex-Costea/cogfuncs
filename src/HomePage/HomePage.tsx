@@ -1,14 +1,17 @@
 import {dataMap} from "../typology/dataMap.ts";
+import {capitalize} from "../utils/utils.ts";
+import {Link} from "react-router-dom";
 
 export default function HomePage() {
     const categories = Object.keys(dataMap)
     return (
         <>
-            <img src={"./cogfuncs.svg"} width={"300px"} alt={"Cogfuncs"}/>
             <h1>Who Are You, Really?</h1>
             {
                 categories.map((name) =>
-                    <h2 key={name}>{name}</h2>)
+                    <h2 key={name}>
+                        <Link to={`/${name}`}>{capitalize(name)}</Link>
+                    </h2>)
             }
         </>
     )

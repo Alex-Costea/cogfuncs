@@ -1,4 +1,4 @@
-import Link from "./Link.ts";
+import ConceptLink from "./ConceptLink.ts";
 
 type OrientationOptions = "Inward" | "Outward"
 
@@ -22,16 +22,16 @@ type CogFuncOptions = "Ti" | "Te" | "Fi" | "Fe" | "Si" | "Se" | "Ni" | "Ne"
 
 export interface CogFunc{
     name : CogFuncOptions
-    orientation : Link<OrientationOptions>
-    epistemology : Link<EpistemologyOptions>
-    attitude : Link<AttitudeOptions>
+    orientation : ConceptLink<OrientationOptions>
+    epistemology : ConceptLink<EpistemologyOptions>
+    attitude : ConceptLink<AttitudeOptions>
 }
 
 type CogFuncDomOptions = `${CogFuncOptions}Dom`
 
 export interface DomType{
     name : CogFuncDomOptions
-    dominant: Link<CogFuncOptions>
+    dominant: ConceptLink<CogFuncOptions>
 }
 
 type CogStackOptions = "TiNe" | "TiSe" | "TeNi" | "TeSi" |
@@ -48,14 +48,14 @@ type mbtiOptions = "INTP" | "ISTP" | "ENTJ" | "ESTJ" |
 export interface CogStack{
     name: CogStackOptions
     mbtiEquivalent : mbtiOptions
-    core: Link<CogFuncDomOptions>
-    secondary: Link<CogFuncOptions>
-    tertiary: Link<CogFuncOptions>
-    inferior: Link<CogFuncOptions>
-    shadow: Link<CogStackOptions>
-    orientationShift: Link<CogStackOptions>
-    attitudeShift: Link<CogStackOptions>
-    thinkFeelShift: Link<CogStackOptions>
-    senseIntuitShift: Link<CogStackOptions>
-    mostDistant: Link<CogStackOptions>
+    core: ConceptLink<CogFuncDomOptions>
+    secondary: ConceptLink<CogFuncOptions>
+    tertiary: ConceptLink<CogFuncOptions>
+    inferior: ConceptLink<CogFuncOptions>
+    shadow: ConceptLink<CogStackOptions>
+    orientationShift: ConceptLink<CogStackOptions>
+    attitudeShift: ConceptLink<CogStackOptions>
+    thinkFeelShift: ConceptLink<CogStackOptions>
+    senseIntuitShift: ConceptLink<CogStackOptions>
+    mostDistant: ConceptLink<CogStackOptions>
 }

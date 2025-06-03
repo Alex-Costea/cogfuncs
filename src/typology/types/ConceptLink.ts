@@ -1,5 +1,6 @@
-export default class Link<T extends string = string> {
+export default class ConceptLink<T extends string = string> {
     readonly value: T;
+    readonly type = "Link"
 
     constructor(value: T) {
         this.value = value;

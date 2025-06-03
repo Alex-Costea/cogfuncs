@@ -1,4 +1,4 @@
-import Link from "../types/Link.ts"
+import ConceptLink from "./ConceptLink.ts"
 
 // Center
 
@@ -58,13 +58,13 @@ type TypeOptions = `type${EnneagramNumber}`
 interface CoreType{
     name : EnneagramNumber
     archetype: string
-    center: Link<CenterOptions>
-    agent: Link<AgentOptions>
-    reaction: Link<ReactionOptions>
-    relation: Link<RelationOptions>
-    socializing: Link<SocializingOptions>
-    integration: Link<TypeOptions>
-    retreat: Link<TypeOptions>
+    center: ConceptLink<CenterOptions>
+    agent: ConceptLink<AgentOptions>
+    reaction: ConceptLink<ReactionOptions>
+    relation: ConceptLink<RelationOptions>
+    socializing: ConceptLink<SocializingOptions>
+    integration: ConceptLink<TypeOptions>
+    retreat: ConceptLink<TypeOptions>
 }
 
 export type HeartType = CoreType & {name : HeartNumbers}
@@ -80,17 +80,17 @@ export type WingedOptions = `type${WingedNumbers}`
 
 interface WingedType {
     name : WingedNumbers
-    core: Link<TypeOptions>
-    wing: Link<TypeOptions>
+    core: ConceptLink<TypeOptions>
+    wing: ConceptLink<TypeOptions>
     archetype: string
     strength : string
-    integration: Link<WingedOptions>
-    retreat: Link<WingedOptions>
+    integration: ConceptLink<WingedOptions>
+    retreat: ConceptLink<WingedOptions>
 }
 
-export type WingedHeartType = WingedType & {core : Link<HeartTypeOptions>}
-export type WingedHeadType = WingedType & {core : Link<HeadTypeOptions>}
-export type WingedGutType = WingedType & {core : Link<GutTypeOptions>}
+export type WingedHeartType = WingedType & {core : ConceptLink<HeartTypeOptions>}
+export type WingedHeadType = WingedType & {core : ConceptLink<HeadTypeOptions>}
+export type WingedGutType = WingedType & {core : ConceptLink<GutTypeOptions>}
 
 // Tri fixes
 
