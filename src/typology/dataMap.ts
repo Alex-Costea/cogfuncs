@@ -27,8 +27,8 @@ import {
     internal,
     metabolizing,
     reactive,
-    rejection,
-    superego,
+    rejection, So, SoSp, SoSx, Sp, SpSo, SpSx,
+    superego, Sx, SxSo, SxSp,
     type1,
     type1w2,
     type1w9,
@@ -44,12 +44,11 @@ import {
     type7, type7w6, type7w8,
     type8, type8w7, type8w9,
     type9, type9w1, type9w8
-} from "./data/enneagrams.ts";
-import {So, SoSp, SoSx, Sp, SpSo, SpSx, Sx, SxSo, SxSp} from "./data/instinct.ts";
+} from "./data/psyfuncs.ts";
 
 export const dataMap ={
-    cogfuncs:{
-        cognitiveStacks:{
+    cogdata:{
+        cogstack:{
             TiNe, TiSe, TeNi, TeSi,
             FiNe, FiSe, FeNi, FeSi,
             SiTe, SiFe, SeTi, SeFi,
@@ -67,17 +66,16 @@ export const dataMap ={
         attitude:{
             Judging, Perceiving,
         },
-        functions:{
+        cogfuncs:{
             Ti, Te, Fi, Fe, Si, Se, Ni, Ne,
-
         },
     },
-    enneagrams:{
-        coreTypes:{
+    psydata:{
+        corePsyfuncs:{
             type1, type2, type3, type4, type5, type6, type7, type8, type9,
         },
 
-        wingedTypes:{
+        wingedPsyfuncs:{
             type1w9, type1w2,
             type2w1, type2w3,
             type3w2, type3w4,
@@ -91,6 +89,13 @@ export const dataMap ={
         
         centers:{
             heart, head, gut,
+        },
+
+        insstack:{
+            SoSx, SoSp, SxSo, SxSp, SpSo, SpSx
+        },
+        insfuncs:{
+            So, Sx, Sp,
         },
 
         agents:{
@@ -109,12 +114,4 @@ export const dataMap ={
             compliant, assertive, internal,
         },
     },
-    instincts:{
-        instinctStack:{
-            SoSx, SoSp, SxSo, SxSp, SpSo, SpSx
-        },
-        coreInstincts:{
-            So, Sx, Sp,
-        },
-    }
 }
