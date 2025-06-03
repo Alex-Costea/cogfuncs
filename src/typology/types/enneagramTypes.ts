@@ -63,9 +63,8 @@ interface CoreType{
     reaction: Link<ReactionOptions>
     relation: Link<RelationOptions>
     socializing: Link<SocializingOptions>
-    // Note: integration takes the strength of another type
-    // Reverse integration is called retreat, and it's a loss of their own strength
     integration: Link<TypeOptions>
+    retreat: Link<TypeOptions>
 }
 
 export type HeartType = CoreType & {name : HeartNumbers}
@@ -86,6 +85,7 @@ interface WingedType {
     archetype: string
     strength : string
     integration: Link<WingedOptions>
+    retreat: Link<WingedOptions>
 }
 
 export type WingedHeartType = WingedType & {core : Link<HeartTypeOptions>}

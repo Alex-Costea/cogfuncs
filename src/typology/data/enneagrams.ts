@@ -92,7 +92,8 @@ export const type1 : GutType = {
     reaction: new Link("metabolizing"),
     relation: new Link("frustration"),
     socializing: new Link("compliant"),
-    integration: new Link("type7")
+    integration: new Link("type7"),
+    retreat: new Link("type4"),
 }
 
 export const type1w9 : WingedGutType= {
@@ -101,7 +102,8 @@ export const type1w9 : WingedGutType= {
     wing: new Link("type9"),
     archetype: "idealist",
     strength: "clarity",
-    integration: new Link("type7w8")
+    integration: new Link("type7w8"),
+    retreat: new Link("type4w5"),
 }
 
 export const type1w2 : WingedGutType= {
@@ -110,7 +112,8 @@ export const type1w2 : WingedGutType= {
     wing: new Link("type2"),
     archetype: "advocate",
     strength: "integrity",
-    integration: new Link("type7w6")
+    integration: new Link("type7w6"),
+    retreat: new Link("type4w3"),
 }
 
 // Enneagram type 2
@@ -123,7 +126,8 @@ export const type2 : HeartType = {
     reaction: new Link("avoidant"),
     relation: new Link("rejection"),
     socializing: new Link("compliant"),
-    integration: new Link("type4")
+    integration: new Link("type4"),
+    retreat: new Link("type2"),
 }
 
 export const type2w1 : WingedHeartType = {
@@ -132,7 +136,8 @@ export const type2w1 : WingedHeartType = {
     wing: new Link("type1"),
     archetype: "aide",
     strength: "care",
-    integration: new Link("type4w3")
+    integration: new Link("type4w3"),
+    retreat: new Link("type8w9"),
 }
 
 export const type2w3 : WingedHeartType = {
@@ -141,7 +146,8 @@ export const type2w3 : WingedHeartType = {
     wing: new Link("type3"),
     archetype: "host",
     strength: "connection",
-    integration: new Link("type4w5")
+    integration: new Link("type4w5"),
+    retreat: new Link("type8w7"),
 }
 
 // Enneagram type 3
@@ -154,7 +160,8 @@ export const type3 : HeartType = {
     reaction: new Link("metabolizing"),
     relation: new Link("attachment"),
     socializing: new Link("assertive"),
-    integration: new Link("type6")
+    integration: new Link("type6"),
+    retreat: new Link("type9"),
 }
 
 export const type3w2 : WingedHeartType = {
@@ -163,7 +170,8 @@ export const type3w2 : WingedHeartType = {
     wing: new Link("type2"),
     archetype: "motivator",
     strength: "drive",
-    integration: new Link("type6w7")
+    integration: new Link("type6w7"),
+    retreat: new Link("type9w1"),
 }
 
 export const type3w4 : WingedHeartType = {
@@ -172,7 +180,8 @@ export const type3w4 : WingedHeartType = {
     wing: new Link("type4"),
     archetype: "professional",
     strength: "expression",
-    integration: new Link("type6w5")
+    integration: new Link("type6w5"),
+    retreat: new Link("type9w8"),
 }
 
 // Enneagram type 4
@@ -185,7 +194,8 @@ export const type4 : HeartType = {
     reaction: new Link("reactive"),
     relation: new Link("frustration"),
     socializing: new Link("internal"),
-    integration: new Link("type1")
+    integration: new Link("type1"),
+    retreat: new Link("type2"),
 }
 
 export const type4w3 : WingedHeartType = {
@@ -194,7 +204,8 @@ export const type4w3 : WingedHeartType = {
     wing: new Link("type3"),
     archetype: "auteur",
     strength: "identity",
-    integration: new Link("type1w2")
+    integration: new Link("type1w2"),
+    retreat: new Link("type2w1"),
 }
 
 export const type4w5 : WingedHeartType = {
@@ -203,7 +214,8 @@ export const type4w5 : WingedHeartType = {
     wing: new Link("type5"),
     archetype: "mystic",
     strength: "authenticity",
-    integration: new Link("type1w9")
+    integration: new Link("type1w9"),
+    retreat: new Link("type2w3"),
 }
 
 // Enneagram type 5
@@ -216,7 +228,8 @@ export const type5 : HeadType = {
     reaction: new Link("metabolizing"),
     relation: new Link("rejection"),
     socializing: new Link("internal"),
-    integration: new Link("type8")
+    integration: new Link("type8"),
+    retreat: new Link("type7"),
 }
 
 export const type5w4 : WingedHeadType = {
@@ -225,7 +238,8 @@ export const type5w4 : WingedHeadType = {
     wing: new Link("type4"),
     archetype: "philosopher",
     strength: "depth",
-    integration: new Link("type8w9")
+    integration: new Link("type8w9"),
+    retreat: new Link("type7w6"),
 }
 
 export const type5w6 : WingedHeadType = {
@@ -234,7 +248,8 @@ export const type5w6 : WingedHeadType = {
     wing: new Link("type6"),
     archetype: "strategist",
     strength: "focus",
-    integration: new Link("type8w7")
+    integration: new Link("type8w7"),
+    retreat: new Link("type7w8"),
 }
 
 // Enneagram type 6
@@ -247,7 +262,8 @@ export const type6 : HeadType = {
     reaction: new Link("reactive"),
     relation: new Link("attachment"),
     socializing: new Link("compliant"),
-    integration: new Link("type9")
+    integration: new Link("type9"),
+    retreat: new Link("type3"),
 }
 
 export const type6w5 : WingedHeadType = {
@@ -256,7 +272,8 @@ export const type6w5 : WingedHeadType = {
     wing: new Link("type5"),
     archetype: "advisor",
     strength: "loyalty",
-    integration: new Link("type9w1")
+    integration: new Link("type9w1"),
+    retreat: new Link("type3w4"),
 }
 
 export const type6w7 : WingedHeadType = {
@@ -265,7 +282,8 @@ export const type6w7 : WingedHeadType = {
     wing: new Link("type7"),
     archetype: "navigator",
     strength: "belonging",
-    integration: new Link("type9w8")
+    integration: new Link("type9w8"),
+    retreat: new Link("type3w2"),
 }
 
 // Enneagram type 7
@@ -278,7 +296,8 @@ export const type7 : HeadType = {
     reaction: new Link("avoidant"),
     relation: new Link("frustration"),
     socializing: new Link("assertive"),
-    integration: new Link("type5")
+    integration: new Link("type5"),
+    retreat: new Link("type7"),
 }
 
 export const type7w6 : WingedHeadType = {
@@ -287,7 +306,8 @@ export const type7w6 : WingedHeadType = {
     wing: new Link("type6"),
     archetype: "entertainer",
     strength: "joy",
-    integration: new Link("type5w4")
+    integration: new Link("type5w4"),
+    retreat: new Link("type1w2"),
 }
 
 export const type7w8 : WingedHeadType = {
@@ -296,7 +316,8 @@ export const type7w8 : WingedHeadType = {
     wing: new Link("type8"),
     archetype: "trailblazer",
     strength: "freedom",
-    integration: new Link("type5w6")
+    integration: new Link("type5w6"),
+    retreat: new Link("type1w9"),
 }
 
 // Enneagram type 8
@@ -309,7 +330,8 @@ export const type8 : GutType = {
     reaction: new Link("reactive"),
     relation: new Link("rejection"),
     socializing: new Link("assertive"),
-    integration: new Link("type2")
+    integration: new Link("type2"),
+    retreat: new Link("type5"),
 }
 
 export const type8w7 : WingedGutType = {
@@ -318,7 +340,8 @@ export const type8w7 : WingedGutType = {
     wing: new Link("type7"),
     archetype: "maverick",
     strength: "power",
-    integration: new Link("type2w3")
+    integration: new Link("type2w3"),
+    retreat: new Link("type5w6"),
 }
 
 export const type8w9 : WingedGutType = {
@@ -327,7 +350,8 @@ export const type8w9 : WingedGutType = {
     wing: new Link("type9"),
     archetype: "sovereign",
     strength: "presence",
-    integration: new Link("type2w1")
+    integration: new Link("type2w1"),
+    retreat: new Link("type5w4"),
 }
 
 // Enneagram type 9
@@ -340,7 +364,8 @@ export const type9 : GutType = {
     reaction: new Link("avoidant"),
     relation: new Link("attachment"),
     socializing: new Link("internal"),
-    integration: new Link("type3")
+    integration: new Link("type3"),
+    retreat: new Link("type6"),
 }
 
 export const type9w8 : WingedGutType = {
@@ -349,7 +374,8 @@ export const type9w8 : WingedGutType = {
     wing: new Link("type8"),
     archetype: "arbiter",
     strength: "peace",
-    integration: new Link("type3w4")
+    integration: new Link("type3w4"),
+    retreat: new Link("type6w7"),
 }
 
 export const type9w1 : WingedGutType = {
@@ -358,5 +384,6 @@ export const type9w1 : WingedGutType = {
     wing: new Link("type1"),
     archetype: "mediator",
     strength: "harmony",
-    integration: new Link("type3w2")
+    integration: new Link("type3w2"),
+    retreat: new Link("type6w5"),
 }
