@@ -361,19 +361,3 @@ export const NeFi : CogStack ={
     senseIntuitShift: new Link("SeFi"),
     mostDistant: new Link("SiTe"),
 }
-
-export const cogfuncDataMap = {
-    //Orientation
-    Inward, Outward,
-    //Epistemology
-    Classical, Bayesian,
-    //Attitude
-    Judging, Perceiving,
-    //CogFunc
-    Ti, Te, Fi, Fe, Si, Se, Ni, Ne,
-    //CogStack
-    TiNe, TiSe, TeNi, TeSi,
-    FiNe, FiSe, FeNi, FeSi,
-    SiTe, SiFe, SeTi, SeFi,
-    NiTe, NiFe, NeTi, NeFi
-}

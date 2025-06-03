@@ -49,10 +49,3 @@ export const SpSx : InstinctStack = {
     primary: new Link("Sp"),
     secondary: new Link("Sx")
 }
-
-export const instinctDataMap = {
-    // instinct
-    So, Sx, Sp,
-    // instinct stack
-    SoSx, SoSp, SxSo, SxSp, SpSo, SpSx
-}
