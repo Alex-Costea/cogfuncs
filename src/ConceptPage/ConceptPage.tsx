@@ -1,6 +1,6 @@
 import {Link, useParams} from "react-router-dom";
-import {format, findConceptPath, findConceptReferences, getDataPath, isLink} from "../utils/utils.ts";
-import ConceptLink from "../typology/types/ConceptLink.ts";
+import {format, findConceptReferences, getDataPath} from "../utils/utils.ts";
+import GenericConceptPage from "../GenericConceptPage/GenericConceptPage.tsx";
 
 export default function ConceptPage()
 {
@@ -9,42 +9,14 @@ export default function ConceptPage()
     const conceptEntries = Object.entries(concept).filter(
         ([key]) => key !== 'type'
     )
-    const mapsBackHere = findConceptReferences(item!)
+    const linksHere = findConceptReferences(item!)
 
-    function display(value : unknown) : string{
-        if(typeof value === 'string')
-            return format(value)
-        if(isLink(value))
-            return format((value as ConceptLink).value)
-        return JSON.stringify(value)
-    }
-
-    return <>
+    return<>
         <nav>
             <strong><Link to={'/'}>← Back to Home Page </Link>
-            <Link to={`/${section}`}>← Back to {format(section!)} </Link>
-            <Link to={`/${section}/${subcategory}`}>← Back to {format(subcategory!)} </Link></strong>
+                <Link to={`/${section}`}>← Back to {format(section!)} </Link>
+                <Link to={`/${section}/${subcategory}`}>← Back to {format(subcategory!)} </Link></strong>
+            <GenericConceptPage item={item!} conceptEntries={conceptEntries} linksHere={linksHere}/>
         </nav>
-        <h1>{format(item!)}</h1>
-        {
-            conceptEntries.map(([key, value]) =>
-                <h2>{format(key)}: {
-                    isLink(value)?
-                        <Link to={findConceptPath(value.value)!}>{display(value)}</Link>
-                        :<strong>{display(value)}</strong>
-                }</h2>
-            )
-        }
-        {
-            mapsBackHere.length>0?<>
-                {mapsBackHere.map(value =>
-                    <h2>
-                        <Link to={findConceptPath(value.name)!}>{format(value.name)} </Link>
-                        has <strong>{format(item!)}</strong> as its <strong>{format(value.field)}</strong>
-                    </h2>)
-                }
-            </> :''
-        }
     </>
-
 }

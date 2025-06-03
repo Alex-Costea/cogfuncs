@@ -85,8 +85,9 @@ export const internal : Socializing ={
 // Enneagram type 1
 
 export const type1 : GutType = {
-    name: "1",
+    code: "1",
     archetype: "reformer",
+    type : "coreType",
     center: new ConceptLink("gut"),
     agent: new ConceptLink("superego"),
     reaction: new ConceptLink("metabolizing"),
@@ -98,6 +99,7 @@ export const type1 : GutType = {
 
 export const type1w9 : WingedGutType= {
     code: "1w9",
+    type : "wingedType",
     core: new ConceptLink("type1"),
     wing: new ConceptLink("type9"),
     center: new ConceptLink("gut"),
@@ -109,6 +111,7 @@ export const type1w9 : WingedGutType= {
 
 export const type1w2 : WingedGutType= {
     code: "1w2",
+    type : "wingedType",
     core: new ConceptLink("type1"),
     wing: new ConceptLink("type2"),
     center: new ConceptLink("gut"),
@@ -121,7 +124,8 @@ export const type1w2 : WingedGutType= {
 // Enneagram type 2
 
 export const type2 : HeartType = {
-    name: "2",
+    code: "2",
+    type : "coreType",
     archetype: "steward",
     center: new ConceptLink("heart"),
     agent: new ConceptLink("superego"),
@@ -134,6 +138,7 @@ export const type2 : HeartType = {
 
 export const type2w1 : WingedHeartType = {
     code: "2w1",
+    type : "wingedType",
     core: new ConceptLink("type2"),
     wing: new ConceptLink("type1"),
     center: new ConceptLink("heart"),
@@ -145,6 +150,7 @@ export const type2w1 : WingedHeartType = {
 
 export const type2w3 : WingedHeartType = {
     code: "2w3",
+    type : "wingedType",
     core: new ConceptLink("type2"),
     wing: new ConceptLink("type3"),
     center: new ConceptLink("heart"),
@@ -157,7 +163,8 @@ export const type2w3 : WingedHeartType = {
 // Enneagram type 3
 
 export const type3 : HeartType = {
-    name: "3",
+    code: "3",
+    type : "coreType",
     archetype: "executive",
     center: new ConceptLink("heart"),
     agent: new ConceptLink("ego"),
@@ -170,6 +177,7 @@ export const type3 : HeartType = {
 
 export const type3w2 : WingedHeartType = {
     code: "3w2",
+    type : "wingedType",
     core: new ConceptLink("type3"),
     wing: new ConceptLink("type2"),
     center: new ConceptLink("heart"),
@@ -181,6 +189,7 @@ export const type3w2 : WingedHeartType = {
 
 export const type3w4 : WingedHeartType = {
     code: "3w4",
+    type : "wingedType",
     core: new ConceptLink("type3"),
     wing: new ConceptLink("type4"),
     center: new ConceptLink("heart"),
@@ -193,7 +202,8 @@ export const type3w4 : WingedHeartType = {
 // Enneagram type 4
 
 export const type4 : HeartType = {
-    name: "4",
+    code: "4",
+    type : "coreType",
     archetype: "creator",
     center: new ConceptLink("heart"),
     agent: new ConceptLink("id"),
@@ -206,6 +216,7 @@ export const type4 : HeartType = {
 
 export const type4w3 : WingedHeartType = {
     code: "4w3",
+    type : "wingedType",
     core: new ConceptLink("type4"),
     wing: new ConceptLink("type3"),
     center: new ConceptLink("heart"),
@@ -217,6 +228,7 @@ export const type4w3 : WingedHeartType = {
 
 export const type4w5 : WingedHeartType = {
     code: "4w5",
+    type : "wingedType",
     core: new ConceptLink("type4"),
     wing: new ConceptLink("type5"),
     center: new ConceptLink("heart"),
@@ -229,7 +241,8 @@ export const type4w5 : WingedHeartType = {
 // Enneagram type 5
 
 export const type5 : HeadType = {
-    name: "5",
+    code: "5",
+    type : "coreType",
     archetype: "investigator",
     center: new ConceptLink("head"),
     agent: new ConceptLink("ego"),
@@ -242,6 +255,7 @@ export const type5 : HeadType = {
 
 export const type5w4 : WingedHeadType = {
     code: "5w4",
+    type : "wingedType",
     core: new ConceptLink("type5"),
     wing: new ConceptLink("type4"),
     center: new ConceptLink("head"),
@@ -253,6 +267,7 @@ export const type5w4 : WingedHeadType = {
 
 export const type5w6 : WingedHeadType = {
     code: "5w6",
+    type : "wingedType",
     core: new ConceptLink("type5"),
     wing: new ConceptLink("type6"),
     center: new ConceptLink("head"),
@@ -265,7 +280,8 @@ export const type5w6 : WingedHeadType = {
 // Enneagram type 6
 
 export const type6 : HeadType = {
-    name: "6",
+    code: "6",
+    type : "coreType",
     archetype: "loyalist",
     center : new ConceptLink("head"),
     agent: new ConceptLink("superego"),
@@ -278,6 +294,7 @@ export const type6 : HeadType = {
 
 export const type6w5 : WingedHeadType = {
     code: "6w5",
+    type : "wingedType",
     core: new ConceptLink("type6"),
     wing: new ConceptLink("type5"),
     center: new ConceptLink("head"),
@@ -289,6 +306,7 @@ export const type6w5 : WingedHeadType = {
 
 export const type6w7 : WingedHeadType = {
     code: "6w7",
+    type : "wingedType",
     core: new ConceptLink("type6"),
     wing: new ConceptLink("type7"),
     center: new ConceptLink("head"),
@@ -301,7 +319,8 @@ export const type6w7 : WingedHeadType = {
 // Enneagram type 7
 
 export const type7 : HeadType = {
-    name: "7",
+    code: "7",
+    type : "coreType",
     archetype: "adventurer",
     center: new ConceptLink("head"),
     agent: new ConceptLink("id"),
@@ -314,6 +333,7 @@ export const type7 : HeadType = {
 
 export const type7w6 : WingedHeadType = {
     code: "7w6",
+    type : "wingedType",
     core: new ConceptLink("type7"),
     wing: new ConceptLink("type6"),
     center: new ConceptLink("head"),
@@ -325,6 +345,7 @@ export const type7w6 : WingedHeadType = {
 
 export const type7w8 : WingedHeadType = {
     code: "7w8",
+    type : "wingedType",
     core: new ConceptLink("type7"),
     wing: new ConceptLink("type8"),
     center: new ConceptLink("head"),
@@ -337,7 +358,8 @@ export const type7w8 : WingedHeadType = {
 // Enneagram type 8
 
 export const type8 : GutType = {
-    name: "8",
+    code: "8",
+    type : "coreType",
     archetype: "challenger",
     center: new ConceptLink("gut"),
     agent: new ConceptLink("id"),
@@ -350,6 +372,7 @@ export const type8 : GutType = {
 
 export const type8w7 : WingedGutType = {
     code: "8w7",
+    type : "wingedType",
     core: new ConceptLink("type8"),
     wing: new ConceptLink("type7"),
     center: new ConceptLink("gut"),
@@ -361,6 +384,7 @@ export const type8w7 : WingedGutType = {
 
 export const type8w9 : WingedGutType = {
     code: "8w9",
+    type : "wingedType",
     core: new ConceptLink("type8"),
     wing: new ConceptLink("type9"),
     center: new ConceptLink("gut"),
@@ -373,7 +397,8 @@ export const type8w9 : WingedGutType = {
 // Enneagram type 9
 
 export const type9 : GutType = {
-    name: "9",
+    code: "9",
+    type : "coreType",
     archetype: "peacemaker",
     center: new ConceptLink("gut"),
     agent: new ConceptLink("ego"),
@@ -386,6 +411,7 @@ export const type9 : GutType = {
 
 export const type9w8 : WingedGutType = {
     code: "9w8",
+    type : "wingedType",
     core: new ConceptLink("type9"),
     wing: new ConceptLink("type8"),
     center: new ConceptLink("gut"),
@@ -397,6 +423,7 @@ export const type9w8 : WingedGutType = {
 
 export const type9w1 : WingedGutType = {
     code: "9w1",
+    type : "wingedType",
     core: new ConceptLink("type9"),
     wing: new ConceptLink("type1"),
     center: new ConceptLink("gut"),

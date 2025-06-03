@@ -55,8 +55,9 @@ type EnneagramNumber = HeartNumbers | HeadNumbers | GutNumbers
 type TypeOptions = `type${EnneagramNumber}`
 
 
-interface CoreType{
+type CoreType = {
     code : EnneagramNumber
+    type : "coreType"
     archetype: string
     center: ConceptLink<CenterOptions>
     agent: ConceptLink<AgentOptions>
@@ -67,9 +68,9 @@ interface CoreType{
     retreat: ConceptLink<TypeOptions>
 }
 
-export type HeartType = CoreType & {name : HeartNumbers}
-export type HeadType = CoreType & {name : HeadNumbers}
-export type GutType = CoreType & {name : GutNumbers}
+export type HeartType = CoreType & {code : HeartNumbers}
+export type HeadType = CoreType & {code : HeadNumbers}
+export type GutType = CoreType & {code : GutNumbers}
 
 // Winged types
 
@@ -78,8 +79,9 @@ export type WingedNumbers = "1w9" | "1w2" | "2w1" | "2w3" | "3w2" | "3w4" | "4w3
 
 export type WingedOptions = `type${WingedNumbers}`
 
-interface WingedType {
+type WingedType = {
     code : WingedNumbers
+    type : "wingedType"
     core: ConceptLink<TypeOptions>
     wing: ConceptLink<TypeOptions>
     center: ConceptLink<CenterOptions>
