@@ -9,6 +9,7 @@ export default function WingedPsyfuncPage(
     const coreType = concept as WingedType
     const name = format(item!)
     const center = getObject(coreType.center.value) as unknown as Center
+    const centerName  = center.name
     const integrationCode = coreType.integration.value
     const integration = getObject(integrationCode) as unknown as CoreType
     const retreatCode = coreType.retreat.value
@@ -27,9 +28,10 @@ export default function WingedPsyfuncPage(
         <h1>{name}</h1>
         <h2>
             <p>
-                <strong>{name}</strong> is part of the {center.name} center, and as such it is responsible for dealing
-                with <strong>{center.emotion}</strong>. Its fundamental desire is <strong>{center.desire}</strong>,
-                and it deals with this by using its unique strength of <strong>{coreType.strength}</strong>.</p>
+                <strong>{name}</strong> function is part of the <Link to={findConceptPath(centerName)!}>
+                {format(centerName)}</Link> center, and as such it is responsible for dealing
+                with <strong>{center.emotion}</strong>. Its fundamental desire is <strong>{center.desire}</strong>, and
+                it seeks to achieve it using its unique strength of <strong>{coreType.strength}</strong>.</p>
             <p>
                 It is a subfunction of <Link to={findConceptPath(superTypeCode)!}>{format(superTypeCode)}</Link> that
                 has learned to incorporate elements of <Link to={findConceptPath(wingCode)!}>{format(wingCode)}
@@ -39,7 +41,7 @@ export default function WingedPsyfuncPage(
             <p>
                 In integration, it gains the positive
                 attributes of <Link to={findConceptPath(integrationCode)!}>{format(integrationCode)}</Link>,
-                specifically their <strong>{integration.strength}</strong>.
+                specifically its <strong>{integration.strength}</strong>.
                 However, it can also retreat from its <strong>{coreType.strength}</strong>, and start taking on the
                 negative attributes of <Link to={findConceptPath(retreatCode)!}>{format(retreatCode)}</Link>.
             </p>
