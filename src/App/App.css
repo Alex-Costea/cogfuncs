@@ -4,3 +4,12 @@
   padding: 2rem;
   text-align: center;
 }
+
+div, h2
+{
+  font-size: large;
+}
+
+h1{
+  font-size: xx-large;
+}

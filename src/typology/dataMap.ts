@@ -29,21 +29,21 @@ import {
     reactive,
     rejection,
     superego,
-    type1,
-    type1w2,
-    type1w9,
-    type2,
-    type2w1,
-    type2w3,
-    type3,
-    type3w2,
-    type3w4,
-    type4, type4w3, type4w5,
-    type5, type5w4, type5w6,
-    type6, type6w5, type6w7,
-    type7, type7w6, type7w8,
-    type8, type8w7, type8w9,
-    type9, type9w1, type9w8
+    func1,
+    func1w2,
+    func1w9,
+    func2,
+    func2w1,
+    func2w3,
+    func3,
+    func3w2,
+    func3w4,
+    func4, func4w3, func4w5,
+    func5, func5w4, func5w6,
+    func6, func6w5, func6w7,
+    func7, func7w6, func7w8,
+    func8, func8w7, func8w9,
+    func9, func9w1, func9w8
 } from "./data/psyfuncs.ts";
 
 export const dataMap ={
@@ -72,19 +72,19 @@ export const dataMap ={
     },
     psydata:{
         corePsyfuncs:{
-            type1, type2, type3, type4, type5, type6, type7, type8, type9,
+            func1, func2, func3, func4, func5, func6, func7, func8, func9,
         },
 
         wingedPsyfuncs:{
-            type1w9, type1w2,
-            type2w1, type2w3,
-            type3w2, type3w4,
-            type4w3, type4w5,
-            type5w4, type5w6,
-            type6w5, type6w7,
-            type7w6, type7w8,
-            type8w7, type8w9,
-            type9w8, type9w1,
+            func1w9, func1w2,
+            func2w1, func2w3,
+            func3w2, func3w4,
+            func4w3, func4w5,
+            func5w4, func5w6,
+            func6w5, func6w7,
+            func7w6, func7w8,
+            func8w7, func8w9,
+            func9w8, func9w1,
         },
         
         centers:{

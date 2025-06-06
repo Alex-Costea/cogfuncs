@@ -8,6 +8,8 @@ export interface Center {
     name: CenterOptions
     emotion: "shame" | "fear" | "anger"
     desire: "significance" | "security" | "autonomy"
+    visibleIn1: "motivations" | "speech" | "behavior"
+    visibleIn2: "emotions" | "reasoning" | "instincts"
 }
 
 // Agent
@@ -45,14 +47,14 @@ export interface Socializing{
 // Core types
 
 type HeartNumbers = "2" | "3" | "4"
-type HeartTypeOptions = `type${HeartNumbers}`
+type HeartTypeOptions = `func${HeartNumbers}`
 type HeadNumbers = "5" | "6" | "7"
-type HeadTypeOptions = `type${HeadNumbers}`
+type HeadTypeOptions = `func${HeadNumbers}`
 type GutNumbers = "8" | "9" | "1"
-type GutTypeOptions = `type${GutNumbers}`
+type GutTypeOptions = `func${GutNumbers}`
 
 type EnneagramNumber = HeartNumbers | HeadNumbers | GutNumbers
-type TypeOptions = `type${EnneagramNumber}`
+type TypeOptions = `func${EnneagramNumber}`
 
 
 export type CoreType = {
@@ -78,7 +80,7 @@ export type GutType = CoreType & {code : GutNumbers}
 export type WingedNumbers = "1w9" | "1w2" | "2w1" | "2w3" | "3w2" | "3w4" | "4w3" | "4w5" | "5w4" | "5w6" | "6w5" |
     "6w7" | "7w6" | "7w8" | "8w7" | "8w9" | "9w8" | "9w1"
 
-export type WingedOptions = `type${WingedNumbers}`
+export type WingedOptions = `func${WingedNumbers}`
 
 export type WingedType = {
     code : WingedNumbers
@@ -109,18 +111,4 @@ type TriFix = {
 export type Psyche = {
     core: TriFix
     center: Center
-}
-
-type InstinctOptions = "So" | "Sx" | "Sp"
-
-export interface Instinct {
-    name: InstinctOptions
-}
-
-type InstinctStackOption = "So/Sx" | "So/Sp" | "Sx/So" | "Sx/Sp" | "Sp/So" | "Sp/Sx"
-
-export interface InstinctStack{
-    name: InstinctStackOption
-    primary: ConceptLink<InstinctOptions>
-    secondary: ConceptLink<InstinctOptions>
 }

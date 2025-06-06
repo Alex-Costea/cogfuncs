@@ -18,12 +18,12 @@ export default function CorePsyfuncPage(
     const relation = coreType.relation.value
     const socializing = coreType.socializing.value
     const subtypes = linksHere.filter(it => it.field == "core")
-    const subtype1 = subtypes[0].name
-    const subtype2 = subtypes[1].name
+    const subfunc1 = subtypes[0].name
+    const subfunc2 = subtypes[1].name
 
     return<>
         <h1>{name}</h1>
-        <h2>
+        <div>
             <p>
                 <strong>{name}</strong> function is part of the <Link to={findConceptPath(centerName)!}>
                 {format(centerName)}</Link> center, and as such it is responsible for dealing
@@ -37,6 +37,18 @@ export default function CorePsyfuncPage(
                 negative attributes of <Link to={findConceptPath(retreatCode)!}>{format(retreatCode)}</Link>.
             </p>
             <p>
+                In terms of worldview, this function believes the world would be a better place if everyone focused
+                more on their own <strong>{coreType.strength}</strong>. It can project onto other people as having
+                more <strong>{coreType.strength}</strong> than they truly do, and/or
+                be disappointed by its perceived societal rarity.
+            </p>
+            <p>
+                When not acting as a leading function, <strong>{center.desire}</strong> will be a subsidiary concern
+                of its owner's psyche, and it will be mostly visible in the person's <strong>
+                {center.visibleIn1}</strong> and <strong>{center.visibleIn2}</strong>, which will be characterized
+                by <strong>{coreType.strength}</strong> even as their leading function is of a different nature.
+            </p>
+            <p>
                 It is <strong><Link to={findConceptPath(reaction)!}>{reaction}</Link></strong> towards its core emotion
                 of <strong>{center.emotion}</strong>,
                 and has a relation of <strong><Link to={findConceptPath(relation)!}>{relation}</Link></strong> towards
@@ -47,10 +59,10 @@ export default function CorePsyfuncPage(
             </p>
             <p>
                 It has two
-                subfunctions: <strong><Link to={findConceptPath(subtype1)!}>{format(subtype1)}</Link>
-                </strong> and <strong><Link to={findConceptPath(subtype2)!}>{format(subtype2)}</Link></strong>.
+                subfunctions: <strong><Link to={findConceptPath(subfunc1)!}>{format(subfunc1)}</Link>
+                </strong> and <strong><Link to={findConceptPath(subfunc2)!}>{format(subfunc2)}</Link></strong>.
             </p>
 
-        </h2>
+        </div>
     </>
 }

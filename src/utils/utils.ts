@@ -4,7 +4,7 @@ import ConceptLink from "../typology/types/ConceptLink.ts";
 export function format(word: string): string {
     if (!word) return ''
 
-    if (word.startsWith('type')) {
+    if (word.startsWith('func')) {
         const data = getObject(word) as {archetype : string, center : ConceptLink}
         word = `The ${data.archetype} ${data.center} (${word.slice(4)})`
     }
