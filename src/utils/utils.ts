@@ -6,8 +6,11 @@ export function format(word: string): string {
 
     if (word.startsWith('type')) {
         const data = getObject(word) as {archetype : string, center : ConceptLink}
-        const center = format(data.center.value)
-        word = `The ${data.archetype} ${center} (${word.slice(4)})`
+        word = `The ${data.archetype} ${data.center} (${word.slice(4)})`
+    }
+    if (word.startsWith('stack')) {
+        const data = getObject(word) as {archetype : string, name : ConceptLink}
+        word = `The ${data.archetype} Brain (${data.name})`
     }
 
     // insert space before capital letters (camelCase or PascalCase)

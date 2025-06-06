@@ -34,10 +34,10 @@ export interface DomType{
     core: ConceptLink<CogFuncOptions>
 }
 
-type CogStackOptions = "TiNe" | "TiSe" | "TeNi" | "TeSi" |
-    "FiNe" | "FiSe" | "FeNi" | "FeSi" |
-    "SiTe" | "SiFe" | "SeTi" | "SeFi" |
-    "NiTe" | "NiFe" | "NeTi" | "NeFi"
+type CogStackOptions = "stackTiNe" | "stackTiSe" | "stackTeNi" | "stackTeSi" |
+    "stackFiNe" | "stackFiSe" | "stackFeNi" | "stackFeSi" |
+    "stackSiTe" | "stackSiFe" | "stackSeTi" | "stackSeFi" |
+    "stackNiTe" | "stackNiFe" | "stackNeTi" | "stackNeFi"
 
 type mbtiOptions = "INTP" | "ISTP" | "ENTJ" | "ESTJ" |
     "INFP" | "ISFP" | "ENFJ" | "ESFJ" |
@@ -46,7 +46,7 @@ type mbtiOptions = "INTP" | "ISTP" | "ENTJ" | "ESTJ" |
 
 
 export interface CogStack{
-    name: CogStackOptions
+    name: string
     mbtiEquivalent : mbtiOptions
     archetype : string
     parentType: ConceptLink<CogFuncDomOptions>

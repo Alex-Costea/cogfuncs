@@ -1,17 +1,17 @@
 import {
     Bayesian,
     Classical,
-    Fe, FeDom, FeNi, FeSi,
-    Fi, FiDom, FiNe, FiSe,
+    Fe, FeDom, stackFeNi, stackFeSi,
+    Fi, FiDom, stackFiNe, stackFiSe,
     Inward,
-    Judging, Ne, NeDom, NeFi, NeTi,
-    Ni, NiDom, NiFe, NiTe,
+    Judging, Ne, NeDom, stackNeFi, stackNeTi,
+    Ni, NiDom, stackNiFe, stackNiTe,
     Outward,
     Perceiving,
-    Se, SeDom, SeFi, SeTi,
-    Si, SiDom, SiFe, SiTe,
-    Te, TeDom, TeNi, TeSi,
-    Ti, TiDom, TiNe, TiSe
+    Se, SeDom, stackSeFi, stackSeTi,
+    Si, SiDom, stackSiFe, stackSiTe,
+    Te, TeDom, stackTeNi, stackTeSi,
+    Ti, TiDom, stackTiNe, stackTiSe
 } from "./data/cogfuncs.ts";
 import {
     assertive,
@@ -49,10 +49,10 @@ import {
 export const dataMap ={
     cogdata:{
         cogstack:{
-            TiNe, TiSe, TeNi, TeSi,
-            FiNe, FiSe, FeNi, FeSi,
-            SiTe, SiFe, SeTi, SeFi,
-            NiTe, NiFe, NeTi, NeFi
+            stackTiNe, stackTiSe, stackTeNi, stackTeSi,
+            stackFiNe, stackFiSe, stackFeNi, stackFeSi,
+            stackSiTe, stackSiFe, stackSeTi,stackSeFi,
+            stackNiTe, stackNiFe, stackNeTi, stackNeFi
         },
         dominantTypes:{
             TiDom, TeDom, FiDom, FeDom, SiDom, SeDom, NiDom, NeDom,

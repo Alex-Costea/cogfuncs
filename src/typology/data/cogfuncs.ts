@@ -121,8 +121,8 @@ export const NeDom : DomType ={
     core: new ConceptLink("Ne")
 }
 
-export const TiNe : CogStack ={
-    name: "TiNe",
+export const stackTiNe : CogStack ={
+    name: "Ti-Ne",
     mbtiEquivalent: "INTP",
     archetype: "modeler",
     parentType: new ConceptLink("TiDom"),
@@ -130,16 +130,16 @@ export const TiNe : CogStack ={
     secondary: new ConceptLink("Ne"),
     tertiary: new ConceptLink("Si"),
     inferior: new ConceptLink("Fe"),
-    shadow: new ConceptLink("TeNi"),
-    orientationShift: new ConceptLink("NeTi"),
-    attitudeShift: new ConceptLink("NiTe"),
-    thinkFeelShift: new ConceptLink("FiNe"),
-    senseIntuitShift: new ConceptLink("TiSe"),
-    mostDistant: new ConceptLink("FeSi"),
+    shadow: new ConceptLink("stackTeNi"),
+    orientationShift: new ConceptLink("stackNeTi"),
+    attitudeShift: new ConceptLink("stackNiTe"),
+    thinkFeelShift: new ConceptLink("stackFiNe"),
+    senseIntuitShift: new ConceptLink("stackTiSe"),
+    mostDistant: new ConceptLink("stackFeSi"),
 }
 
-export const TiSe : CogStack ={
-    name: "TiSe",
+export const stackTiSe : CogStack ={
+    name: "Ti-Se",
     mbtiEquivalent: "ISTP",
     archetype: "agent",
     parentType: new ConceptLink("TiDom"),
@@ -147,16 +147,16 @@ export const TiSe : CogStack ={
     secondary: new ConceptLink("Se"),
     tertiary: new ConceptLink("Ni"),
     inferior: new ConceptLink("Fe"),
-    shadow: new ConceptLink("TeSi"),
-    orientationShift: new ConceptLink("SeTi"),
-    attitudeShift: new ConceptLink("SiTe"),
-    thinkFeelShift: new ConceptLink("FiSe"),
-    senseIntuitShift: new ConceptLink("TiNe"),
-    mostDistant: new ConceptLink("FeNi"),
+    shadow: new ConceptLink("stackTeSi"),
+    orientationShift: new ConceptLink("stackSeTi"),
+    attitudeShift: new ConceptLink("stackSiTe"),
+    thinkFeelShift: new ConceptLink("stackFiSe"),
+    senseIntuitShift: new ConceptLink("stackTiNe"),
+    mostDistant: new ConceptLink("stackFeNi"),
 }
 
-export const TeNi : CogStack ={
-    name: "TeNi",
+export const stackTeNi : CogStack ={
+    name: "Te-Ni",
     mbtiEquivalent: "ENTJ",
     archetype: "commander",
     parentType: new ConceptLink("TeDom"),
@@ -164,16 +164,16 @@ export const TeNi : CogStack ={
     secondary: new ConceptLink("Ni"),
     tertiary: new ConceptLink("Se"),
     inferior: new ConceptLink("Fi"),
-    shadow: new ConceptLink("TiNe"),
-    orientationShift: new ConceptLink("NiTe"),
-    attitudeShift: new ConceptLink("NeTi"),
-    thinkFeelShift: new ConceptLink("FeNi"),
-    senseIntuitShift: new ConceptLink("TeSi"),
-    mostDistant: new ConceptLink("FiSe"),
+    shadow: new ConceptLink("stackTiNe"),
+    orientationShift: new ConceptLink("stackNiTe"),
+    attitudeShift: new ConceptLink("stackNeTi"),
+    thinkFeelShift: new ConceptLink("stackFeNi"),
+    senseIntuitShift: new ConceptLink("stackTeSi"),
+    mostDistant: new ConceptLink("stackFiSe"),
 }
 
-export const TeSi : CogStack ={
-    name: "TeSi",
+export const stackTeSi : CogStack ={
+    name: "Te-Si",
     mbtiEquivalent: "ESTJ",
     archetype: "overseer",
     parentType: new ConceptLink("TeDom"),
@@ -181,16 +181,16 @@ export const TeSi : CogStack ={
     secondary: new ConceptLink("Si"),
     tertiary: new ConceptLink("Ne"),
     inferior: new ConceptLink("Fi"),
-    shadow: new ConceptLink("TiSe"),
-    orientationShift: new ConceptLink("SiTe"),
-    attitudeShift: new ConceptLink("SeTi"),
-    thinkFeelShift: new ConceptLink("FeSi"),
-    senseIntuitShift: new ConceptLink("TeNi"),
-    mostDistant: new ConceptLink("FiNe"),
+    shadow: new ConceptLink("stackTiSe"),
+    orientationShift: new ConceptLink("stackSiTe"),
+    attitudeShift: new ConceptLink("stackSeTi"),
+    thinkFeelShift: new ConceptLink("stackFeSi"),
+    senseIntuitShift: new ConceptLink("stackTeNi"),
+    mostDistant: new ConceptLink("stackFiNe"),
 }
 
-export const FiNe : CogStack ={
-    name: "FiNe",
+export const stackFiNe : CogStack ={
+    name: "Fi-Ne",
     mbtiEquivalent: "INFP",
     archetype: "interpreter",
     parentType: new ConceptLink("FiDom"),
@@ -198,16 +198,16 @@ export const FiNe : CogStack ={
     secondary: new ConceptLink("Ne"),
     tertiary: new ConceptLink("Si"),
     inferior: new ConceptLink("Te"),
-    shadow: new ConceptLink("FeNi"),
-    orientationShift: new ConceptLink("NeFi"),
-    attitudeShift: new ConceptLink("NiFe"),
-    thinkFeelShift: new ConceptLink("TiNe"),
-    senseIntuitShift: new ConceptLink("FiSe"),
-    mostDistant: new ConceptLink("TeSi"),
+    shadow: new ConceptLink("stackFeNi"),
+    orientationShift: new ConceptLink("stackNeFi"),
+    attitudeShift: new ConceptLink("stackNiFe"),
+    thinkFeelShift: new ConceptLink("stackTiNe"),
+    senseIntuitShift: new ConceptLink("stackFiSe"),
+    mostDistant: new ConceptLink("stackTeSi"),
 }
 
-export const FiSe : CogStack ={
-    name: "FiSe",
+export const stackFiSe : CogStack ={
+    name: "Fi-Se",
     mbtiEquivalent: "ISFP",
     archetype: "tuner",
     parentType: new ConceptLink("FiDom"),
@@ -215,16 +215,16 @@ export const FiSe : CogStack ={
     secondary: new ConceptLink("Se"),
     tertiary: new ConceptLink("Ni"),
     inferior: new ConceptLink("Te"),
-    shadow: new ConceptLink("FeSi"),
-    orientationShift: new ConceptLink("SeFi"),
-    attitudeShift: new ConceptLink("SiFe"),
-    thinkFeelShift: new ConceptLink("TiSe"),
-    senseIntuitShift: new ConceptLink("FiNe"),
-    mostDistant: new ConceptLink("TeNi"),
+    shadow: new ConceptLink("stackFeSi"),
+    orientationShift: new ConceptLink("stackSeFi"),
+    attitudeShift: new ConceptLink("stackSiFe"),
+    thinkFeelShift: new ConceptLink("stackTiSe"),
+    senseIntuitShift: new ConceptLink("stackFiNe"),
+    mostDistant: new ConceptLink("stackTeNi"),
 }
 
-export const FeNi : CogStack ={
-    name: "FeNi",
+export const stackFeNi : CogStack ={
+    name: "Fe-Ni",
     mbtiEquivalent: "ENFJ",
     archetype: "orchestrator",
     parentType: new ConceptLink("FeDom"),
@@ -232,16 +232,16 @@ export const FeNi : CogStack ={
     secondary: new ConceptLink("Ni"),
     tertiary: new ConceptLink("Se"),
     inferior: new ConceptLink("Ti"),
-    shadow: new ConceptLink("FiNe"),
-    orientationShift: new ConceptLink("NiFe"),
-    attitudeShift: new ConceptLink("NeFi"),
-    thinkFeelShift: new ConceptLink("TeNi"),
-    senseIntuitShift: new ConceptLink("FeSi"),
-    mostDistant: new ConceptLink("TiSe"),
+    shadow: new ConceptLink("stackFiNe"),
+    orientationShift: new ConceptLink("stackNiFe"),
+    attitudeShift: new ConceptLink("stackNeFi"),
+    thinkFeelShift: new ConceptLink("stackTeNi"),
+    senseIntuitShift: new ConceptLink("stackFeSi"),
+    mostDistant: new ConceptLink("stackTiSe"),
 }
 
-export const FeSi : CogStack ={
-    name: "FeSi",
+export const stackFeSi : CogStack ={
+    name: "Fe-Si",
     mbtiEquivalent: "ESFJ",
     archetype: "emissary",
     parentType: new ConceptLink("FeDom"),
@@ -249,16 +249,16 @@ export const FeSi : CogStack ={
     secondary: new ConceptLink("Si"),
     tertiary: new ConceptLink("Ne"),
     inferior: new ConceptLink("Ti"),
-    shadow: new ConceptLink("FiSe"),
-    orientationShift: new ConceptLink("SiFe"),
-    attitudeShift: new ConceptLink("SeFi"),
-    thinkFeelShift: new ConceptLink("TeSi"),
-    senseIntuitShift: new ConceptLink("FeNi"),
-    mostDistant: new ConceptLink("TiNe"),
+    shadow: new ConceptLink("stackFiSe"),
+    orientationShift: new ConceptLink("stackSiFe"),
+    attitudeShift: new ConceptLink("stackSeFi"),
+    thinkFeelShift: new ConceptLink("stackTeSi"),
+    senseIntuitShift: new ConceptLink("stackFeNi"),
+    mostDistant: new ConceptLink("stackTiNe"),
 }
 
-export const SiTe : CogStack ={
-    name: "SiTe",
+export const stackSiTe : CogStack ={
+    name: "Si-Te",
     mbtiEquivalent: "ISTJ",
     archetype: "implementer",
     parentType: new ConceptLink("SiDom"),
@@ -266,16 +266,16 @@ export const SiTe : CogStack ={
     secondary: new ConceptLink("Te"),
     tertiary: new ConceptLink("Fi"),
     inferior: new ConceptLink("Ne"),
-    shadow: new ConceptLink("SeTi"),
-    orientationShift: new ConceptLink("TeSi"),
-    attitudeShift: new ConceptLink("TiSe"),
-    thinkFeelShift: new ConceptLink("SiFe"),
-    senseIntuitShift: new ConceptLink("NiTe"),
-    mostDistant: new ConceptLink("NeFi"),
+    shadow: new ConceptLink("stackSeTi"),
+    orientationShift: new ConceptLink("stackTeSi"),
+    attitudeShift: new ConceptLink("stackTiSe"),
+    thinkFeelShift: new ConceptLink("stackSiFe"),
+    senseIntuitShift: new ConceptLink("stackNiTe"),
+    mostDistant: new ConceptLink("stackNeFi"),
 }
 
-export const SiFe : CogStack ={
-    name: "SiFe",
+export const stackSiFe : CogStack ={
+    name: "Si-Fe",
     mbtiEquivalent: "ISFJ",
     archetype: "custodian",
     parentType: new ConceptLink("SiDom"),
@@ -283,16 +283,16 @@ export const SiFe : CogStack ={
     secondary: new ConceptLink("Fe"),
     tertiary: new ConceptLink("Ti"),
     inferior: new ConceptLink("Ne"),
-    shadow: new ConceptLink("SeFi"),
-    orientationShift: new ConceptLink("FeSi"),
-    attitudeShift: new ConceptLink("FiSe"),
-    thinkFeelShift: new ConceptLink("SiTe"),
-    senseIntuitShift: new ConceptLink("NiFe"),
-    mostDistant: new ConceptLink("NeTi"),
+    shadow: new ConceptLink("stackSeFi"),
+    orientationShift: new ConceptLink("stackFeSi"),
+    attitudeShift: new ConceptLink("stackFiSe"),
+    thinkFeelShift: new ConceptLink("stackSiTe"),
+    senseIntuitShift: new ConceptLink("stackNiFe"),
+    mostDistant: new ConceptLink("stackNeTi"),
 }
 
-export const SeTi : CogStack ={
-    name: "SeTi",
+export const stackSeTi : CogStack ={
+    name: "Se-Ti",
     mbtiEquivalent: "ESTP",
     archetype: "striker",
     parentType: new ConceptLink("SeDom"),
@@ -300,16 +300,16 @@ export const SeTi : CogStack ={
     secondary: new ConceptLink("Ti"),
     tertiary: new ConceptLink("Fe"),
     inferior: new ConceptLink("Ni"),
-    shadow: new ConceptLink("SiTe"),
-    orientationShift: new ConceptLink("TiSe"),
-    attitudeShift: new ConceptLink("TeSi"),
-    thinkFeelShift: new ConceptLink("SeFi"),
-    senseIntuitShift: new ConceptLink("NeTi"),
-    mostDistant: new ConceptLink("NiFe"),
+    shadow: new ConceptLink("stackSiTe"),
+    orientationShift: new ConceptLink("stackTiSe"),
+    attitudeShift: new ConceptLink("stackTeSi"),
+    thinkFeelShift: new ConceptLink("stackSeFi"),
+    senseIntuitShift: new ConceptLink("stackNeTi"),
+    mostDistant: new ConceptLink("stackNiFe"),
 }
 
-export const SeFi : CogStack ={
-    name: "SeFi",
+export const stackSeFi : CogStack ={
+    name: "Se-Fi",
     mbtiEquivalent: "ESFP",
     archetype: "emoter",
     parentType: new ConceptLink("SeDom"),
@@ -317,16 +317,16 @@ export const SeFi : CogStack ={
     secondary: new ConceptLink("Fi"),
     tertiary: new ConceptLink("Te"),
     inferior: new ConceptLink("Ni"),
-    shadow: new ConceptLink("SiFe"),
-    orientationShift: new ConceptLink("FiSe"),
-    attitudeShift: new ConceptLink("FeSi"),
-    thinkFeelShift: new ConceptLink("SeTi"),
-    senseIntuitShift: new ConceptLink("NeFi"),
-    mostDistant: new ConceptLink("NiTe"),
+    shadow: new ConceptLink("stackSiFe"),
+    orientationShift: new ConceptLink("stackFiSe"),
+    attitudeShift: new ConceptLink("stackFeSi"),
+    thinkFeelShift: new ConceptLink("stackSeTi"),
+    senseIntuitShift: new ConceptLink("stackNeFi"),
+    mostDistant: new ConceptLink("stackNiTe"),
 }
 
-export const NiTe : CogStack ={
-    name: "NiTe",
+export const stackNiTe : CogStack ={
+    name: "Ni-Te",
     mbtiEquivalent: "INTJ",
     archetype: "forecaster",
     parentType: new ConceptLink("NiDom"),
@@ -334,16 +334,16 @@ export const NiTe : CogStack ={
     secondary: new ConceptLink("Te"),
     tertiary: new ConceptLink("Fi"),
     inferior: new ConceptLink("Se"),
-    shadow: new ConceptLink("NeTi"),
-    orientationShift: new ConceptLink("TeNi"),
-    attitudeShift: new ConceptLink("TiNe"),
-    thinkFeelShift: new ConceptLink("NiFe"),
-    senseIntuitShift: new ConceptLink("SiTe"),
-    mostDistant: new ConceptLink("SeFi"),
+    shadow: new ConceptLink("stackNeTi"),
+    orientationShift: new ConceptLink("stackTeNi"),
+    attitudeShift: new ConceptLink("stackTiNe"),
+    thinkFeelShift: new ConceptLink("stackNiFe"),
+    senseIntuitShift: new ConceptLink("stackSiTe"),
+    mostDistant: new ConceptLink("stackSeFi"),
 }
 
-export const NiFe : CogStack ={
-    name: "NiFe",
+export const stackNiFe : CogStack ={
+    name: "Ni-Fe",
     mbtiEquivalent: "INFJ",
     archetype: "seer",
     parentType: new ConceptLink("NiDom"),
@@ -351,16 +351,16 @@ export const NiFe : CogStack ={
     secondary: new ConceptLink("Fe"),
     tertiary: new ConceptLink("Ti"),
     inferior: new ConceptLink("Se"),
-    shadow: new ConceptLink("NeFi"),
-    orientationShift: new ConceptLink("FeNi"),
-    attitudeShift: new ConceptLink("FiNe"),
-    thinkFeelShift: new ConceptLink("NiTe"),
-    senseIntuitShift: new ConceptLink("SiFe"),
-    mostDistant: new ConceptLink("SeTi"),
+    shadow: new ConceptLink("stackNeFi"),
+    orientationShift: new ConceptLink("stackFeNi"),
+    attitudeShift: new ConceptLink("stackFiNe"),
+    thinkFeelShift: new ConceptLink("stackNiTe"),
+    senseIntuitShift: new ConceptLink("stackSiFe"),
+    mostDistant: new ConceptLink("stackSeTi"),
 }
 
-export const NeTi : CogStack ={
-    name: "NeTi",
+export const stackNeTi : CogStack ={
+    name: "Ne-Ti",
     mbtiEquivalent: "ENTP",
     archetype: "ideator",
     parentType: new ConceptLink("NeDom"),
@@ -368,16 +368,16 @@ export const NeTi : CogStack ={
     secondary: new ConceptLink("Ti"),
     tertiary: new ConceptLink("Fe"),
     inferior: new ConceptLink("Si"),
-    shadow: new ConceptLink("NiTe"),
-    orientationShift: new ConceptLink("TiNe"),
-    attitudeShift: new ConceptLink("TeNi"),
-    thinkFeelShift: new ConceptLink("NeFi"),
-    senseIntuitShift: new ConceptLink("SeTi"),
-    mostDistant: new ConceptLink("SiFe"),
+    shadow: new ConceptLink("stackNiTe"),
+    orientationShift: new ConceptLink("stackTiNe"),
+    attitudeShift: new ConceptLink("stackTeNi"),
+    thinkFeelShift: new ConceptLink("stackNeFi"),
+    senseIntuitShift: new ConceptLink("stackSeTi"),
+    mostDistant: new ConceptLink("stackSiFe"),
 }
 
-export const NeFi : CogStack ={
-    name: "NeFi",
+export const stackNeFi : CogStack ={
+    name: "Ne-Fi",
     mbtiEquivalent: "ENFP",
     archetype: "evoker",
     parentType: new ConceptLink("NeDom"),
@@ -385,10 +385,10 @@ export const NeFi : CogStack ={
     secondary: new ConceptLink("Fi"),
     tertiary: new ConceptLink("Te"),
     inferior: new ConceptLink("Si"),
-    shadow: new ConceptLink("NiFe"),
-    orientationShift: new ConceptLink("FiNe"),
-    attitudeShift: new ConceptLink("FeNi"),
-    thinkFeelShift: new ConceptLink("NeTi"),
-    senseIntuitShift: new ConceptLink("SeFi"),
-    mostDistant: new ConceptLink("SiTe"),
+    shadow: new ConceptLink("stackNiFe"),
+    orientationShift: new ConceptLink("stackFiNe"),
+    attitudeShift: new ConceptLink("stackFeNi"),
+    thinkFeelShift: new ConceptLink("stackNeTi"),
+    senseIntuitShift: new ConceptLink("stackSeFi"),
+    mostDistant: new ConceptLink("stackSiTe"),
 }
