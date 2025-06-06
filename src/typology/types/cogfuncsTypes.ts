@@ -48,6 +48,7 @@ type mbtiOptions = "INTP" | "ISTP" | "ENTJ" | "ESTJ" |
 export interface CogStack{
     name: CogStackOptions
     mbtiEquivalent : mbtiOptions
+    archetype : string
     parentType: ConceptLink<CogFuncDomOptions>
     dominant: ConceptLink<CogFuncOptions>
     secondary: ConceptLink<CogFuncOptions>

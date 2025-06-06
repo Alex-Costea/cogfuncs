@@ -265,7 +265,7 @@ export const type5w4 : WingedHeadType = {
     wing: new ConceptLink("type4"),
     center: new ConceptLink("head"),
     archetype: "philosopher",
-    strength: "depth",
+    strength: "introspection",
     integration: new ConceptLink("type8w9"),
     retreat: new ConceptLink("type7w6"),
 }

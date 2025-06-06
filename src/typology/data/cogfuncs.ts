@@ -124,6 +124,7 @@ export const NeDom : DomType ={
 export const TiNe : CogStack ={
     name: "TiNe",
     mbtiEquivalent: "INTP",
+    archetype: "modeler",
     parentType: new ConceptLink("TiDom"),
     dominant: new ConceptLink("Ti"),
     secondary: new ConceptLink("Ne"),
@@ -140,6 +141,7 @@ export const TiNe : CogStack ={
 export const TiSe : CogStack ={
     name: "TiSe",
     mbtiEquivalent: "ISTP",
+    archetype: "agent",
     parentType: new ConceptLink("TiDom"),
     dominant: new ConceptLink("Ti"),
     secondary: new ConceptLink("Se"),
@@ -151,12 +153,12 @@ export const TiSe : CogStack ={
     thinkFeelShift: new ConceptLink("FiSe"),
     senseIntuitShift: new ConceptLink("TiNe"),
     mostDistant: new ConceptLink("FeNi"),
-
 }
 
 export const TeNi : CogStack ={
     name: "TeNi",
     mbtiEquivalent: "ENTJ",
+    archetype: "commander",
     parentType: new ConceptLink("TeDom"),
     dominant: new ConceptLink("Te"),
     secondary: new ConceptLink("Ni"),
@@ -173,6 +175,7 @@ export const TeNi : CogStack ={
 export const TeSi : CogStack ={
     name: "TeSi",
     mbtiEquivalent: "ESTJ",
+    archetype: "overseer",
     parentType: new ConceptLink("TeDom"),
     dominant: new ConceptLink("Te"),
     secondary: new ConceptLink("Si"),
@@ -189,6 +192,7 @@ export const TeSi : CogStack ={
 export const FiNe : CogStack ={
     name: "FiNe",
     mbtiEquivalent: "INFP",
+    archetype: "interpreter",
     parentType: new ConceptLink("FiDom"),
     dominant: new ConceptLink("Fi"),
     secondary: new ConceptLink("Ne"),
@@ -205,6 +209,7 @@ export const FiNe : CogStack ={
 export const FiSe : CogStack ={
     name: "FiSe",
     mbtiEquivalent: "ISFP",
+    archetype: "tuner",
     parentType: new ConceptLink("FiDom"),
     dominant: new ConceptLink("Fi"),
     secondary: new ConceptLink("Se"),
@@ -221,6 +226,7 @@ export const FiSe : CogStack ={
 export const FeNi : CogStack ={
     name: "FeNi",
     mbtiEquivalent: "ENFJ",
+    archetype: "orchestrator",
     parentType: new ConceptLink("FeDom"),
     dominant: new ConceptLink("Fe"),
     secondary: new ConceptLink("Ni"),
@@ -237,6 +243,7 @@ export const FeNi : CogStack ={
 export const FeSi : CogStack ={
     name: "FeSi",
     mbtiEquivalent: "ESFJ",
+    archetype: "emissary",
     parentType: new ConceptLink("FeDom"),
     dominant: new ConceptLink("Fe"),
     secondary: new ConceptLink("Si"),
@@ -253,6 +260,7 @@ export const FeSi : CogStack ={
 export const SiTe : CogStack ={
     name: "SiTe",
     mbtiEquivalent: "ISTJ",
+    archetype: "implementer",
     parentType: new ConceptLink("SiDom"),
     dominant: new ConceptLink("Si"),
     secondary: new ConceptLink("Te"),
@@ -269,6 +277,7 @@ export const SiTe : CogStack ={
 export const SiFe : CogStack ={
     name: "SiFe",
     mbtiEquivalent: "ISFJ",
+    archetype: "custodian",
     parentType: new ConceptLink("SiDom"),
     dominant: new ConceptLink("Si"),
     secondary: new ConceptLink("Fe"),
@@ -285,6 +294,7 @@ export const SiFe : CogStack ={
 export const SeTi : CogStack ={
     name: "SeTi",
     mbtiEquivalent: "ESTP",
+    archetype: "striker",
     parentType: new ConceptLink("SeDom"),
     dominant: new ConceptLink("Se"),
     secondary: new ConceptLink("Ti"),
@@ -301,6 +311,7 @@ export const SeTi : CogStack ={
 export const SeFi : CogStack ={
     name: "SeFi",
     mbtiEquivalent: "ESFP",
+    archetype: "emoter",
     parentType: new ConceptLink("SeDom"),
     dominant: new ConceptLink("Se"),
     secondary: new ConceptLink("Fi"),
@@ -317,6 +328,7 @@ export const SeFi : CogStack ={
 export const NiTe : CogStack ={
     name: "NiTe",
     mbtiEquivalent: "INTJ",
+    archetype: "forecaster",
     parentType: new ConceptLink("NiDom"),
     dominant: new ConceptLink("Ni"),
     secondary: new ConceptLink("Te"),
@@ -333,6 +345,7 @@ export const NiTe : CogStack ={
 export const NiFe : CogStack ={
     name: "NiFe",
     mbtiEquivalent: "INFJ",
+    archetype: "seer",
     parentType: new ConceptLink("NiDom"),
     dominant: new ConceptLink("Ni"),
     secondary: new ConceptLink("Fe"),
@@ -349,6 +362,7 @@ export const NiFe : CogStack ={
 export const NeTi : CogStack ={
     name: "NeTi",
     mbtiEquivalent: "ENTP",
+    archetype: "ideator",
     parentType: new ConceptLink("NeDom"),
     dominant: new ConceptLink("Ne"),
     secondary: new ConceptLink("Ti"),
@@ -365,6 +379,7 @@ export const NeTi : CogStack ={
 export const NeFi : CogStack ={
     name: "NeFi",
     mbtiEquivalent: "ENFP",
+    archetype: "evoker",
     parentType: new ConceptLink("NeDom"),
     dominant: new ConceptLink("Ne"),
     secondary: new ConceptLink("Fi"),
