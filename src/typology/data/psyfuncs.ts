@@ -1,7 +1,7 @@
 import ConceptLink from "../types/ConceptLink.ts";
 import {
     Agent, Center,
-    GutType, HeadType, HeartType, Instinct, InstinctStack,
+    GutType, HeadType, HeartType,
     Reaction, Relation, Socializing,
     WingedGutType, WingedHeadType, WingedHeartType
 } from "../types/psyfuncsTypes.ts";
@@ -440,52 +440,4 @@ export const type9w1 : WingedGutType = {
     strength: "harmony",
     integration: new ConceptLink("type3w2"),
     retreat: new ConceptLink("type6w5"),
-}
-
-export const So : Instinct = {
-    name: "So"
-}
-
-export const Sx : Instinct = {
-    name: "Sx"
-}
-
-export const Sp : Instinct ={
-    name: "Sp"
-}
-
-export const SoSx : InstinctStack = {
-    name: "So/Sx",
-    primary: new ConceptLink("So"),
-    secondary: new ConceptLink("Sx")
-}
-
-export const SoSp : InstinctStack = {
-    name: "So/Sp",
-    primary: new ConceptLink("So"),
-    secondary: new ConceptLink("Sp")
-}
-
-export const SxSo : InstinctStack = {
-    name: "Sx/So",
-    primary: new ConceptLink("Sx"),
-    secondary: new ConceptLink("So")
-}
-
-export const SxSp : InstinctStack = {
-    name: "Sx/Sp",
-    primary: new ConceptLink("Sx"),
-    secondary: new ConceptLink("Sp")
-}
-
-export const SpSo : InstinctStack = {
-    name: "Sp/So",
-    primary: new ConceptLink("Sp"),
-    secondary: new ConceptLink("So")
-}
-
-export const SpSx : InstinctStack = {
-    name: "Sp/Sx",
-    primary: new ConceptLink("Sp"),
-    secondary: new ConceptLink("Sx")
 }

@@ -27,8 +27,8 @@ import {
     internal,
     metabolizing,
     reactive,
-    rejection, So, SoSp, SoSx, Sp, SpSo, SpSx,
-    superego, Sx, SxSo, SxSp,
+    rejection,
+    superego,
     type1,
     type1w2,
     type1w9,
@@ -54,8 +54,11 @@ export const dataMap ={
             stackSiTe, stackSiFe, stackSeTi,stackSeFi,
             stackNiTe, stackNiFe, stackNeTi, stackNeFi
         },
-        dominantTypes:{
+        cogstackParents:{
             TiDom, TeDom, FiDom, FeDom, SiDom, SeDom, NiDom, NeDom,
+        },
+        cogfuncs:{
+            Ti, Te, Fi, Fe, Si, Se, Ni, Ne,
         },
         orientation:{
             Inward, Outward,
@@ -65,9 +68,6 @@ export const dataMap ={
         },
         attitude:{
             Judging, Perceiving,
-        },
-        cogfuncs:{
-            Ti, Te, Fi, Fe, Si, Se, Ni, Ne,
         },
     },
     psydata:{
@@ -89,13 +89,6 @@ export const dataMap ={
         
         centers:{
             heart, head, gut,
-        },
-
-        insstack:{
-            SoSx, SoSp, SxSo, SxSp, SpSo, SpSx
-        },
-        insfuncs:{
-            So, Sx, Sp,
         },
 
         agents:{
