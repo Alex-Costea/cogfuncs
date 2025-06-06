@@ -82,43 +82,51 @@ export const Ne: CogFunc = {
 }
 
 export const TiDom : DomType ={
-    name: "TiDom",
-    core: new ConceptLink("Ti")
+    name: "Ti-dom",
+    core: new ConceptLink("Ti"),
+    archetype: "analyzer"
 }
 
 export const TeDom : DomType ={
-    name: "TeDom",
-    core: new ConceptLink("Te")
+    name: "Te-dom",
+    core: new ConceptLink("Te"),
+    archetype: "operator"
 }
 
 export const FiDom : DomType ={
-    name: "FiDom",
-    core: new ConceptLink("Fi")
+    name: "Fi-dom",
+    core: new ConceptLink("Fi"),
+    archetype: "valuer"
 }
 
 export const FeDom : DomType ={
-    name: "FeDom",
-    core: new ConceptLink("Fe")
+    name: "Fe-dom",
+    core: new ConceptLink("Fe"),
+    archetype: "conductor"
 }
 
 export const SiDom : DomType ={
-    name: "SiDom",
-    core: new ConceptLink("Si")
+    name: "Si-dom",
+    core: new ConceptLink("Si"),
+    archetype: "preserver"
 }
 
 export const SeDom : DomType ={
-    name: "SeDom",
-    core: new ConceptLink("Se")
+    name: "Se-dom",
+    core: new ConceptLink("Se"),
+    archetype: "reactor"
 }
 
 export const NiDom : DomType ={
-    name: "NiDom",
-    core: new ConceptLink("Ni")
+    name: "Ni-dom",
+    core: new ConceptLink("Ni"),
+    archetype: "visionary"
 }
 
 export const NeDom : DomType ={
-    name: "NeDom",
-    core: new ConceptLink("Ne")
+    name: "Ne-dom",
+    core: new ConceptLink("Ne"),
+    archetype: "explorer"
 }
 
 export const stackTiNe : CogStack ={

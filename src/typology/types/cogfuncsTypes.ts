@@ -30,8 +30,9 @@ export interface CogFunc{
 type CogFuncDomOptions = `${CogFuncOptions}Dom`
 
 export interface DomType{
-    name : CogFuncDomOptions
+    name : string
     core: ConceptLink<CogFuncOptions>
+    archetype: string
 }
 
 type CogStackOptions = "stackTiNe" | "stackTiSe" | "stackTeNi" | "stackTeSi" |

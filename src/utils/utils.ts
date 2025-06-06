@@ -13,6 +13,11 @@ export function format(word: string): string {
         word = `The ${data.archetype} Brain (${data.name})`
     }
 
+    if (word.endsWith('Dom')) {
+        const data = getObject(word) as {archetype : string, name : ConceptLink}
+        word = `The ${data.archetype} Brain (${data.name})`
+    }
+
     // insert space before capital letters (camelCase or PascalCase)
     const withSpaces = word.replace(/([a-z])([A-Z])/g, '$1 $2')
 
