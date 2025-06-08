@@ -29,7 +29,7 @@ export const gut : Center = {
     emotion: "anger",
     desire: "autonomy",
     visibleIn1: "behavior",
-    visibleIn2: "reasoning"
+    visibleIn2: "instincts"
 }
 
 // Freudian agents
