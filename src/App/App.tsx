@@ -18,6 +18,7 @@ function App() {
               <Route path="/:section/:subcategory/:item" element={<ConceptPage />} />
               <Route path="*" element={<NotFound />} />
           </Routes>
+          <small className={"source"}><a href={"https://github.com/Alex-Costea/cogfuncs"}>Source code.</a></small>
       </div>
   )
 }
